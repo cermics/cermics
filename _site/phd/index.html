@@ -1,0 +1,1500 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Beautiful Jekyll 6.0.1 | Copyright Dean Attali 2023 -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  
+
+  
+
+  
+
+  <title>Cermics</title>
+
+  
+  
+  <meta name="author" content="cermics">
+  
+
+  <meta name="description" content="## PhD Theses {% assign year = &quot;3000&quot; %} {% for link in site.data.theses reversed %} {% if link.PY != year %}{% assign year = link.PY %} {{ year }}{% endif %} {% if link.id != &quot;void&quot; %} {% else %} (pdf) {% endif %} **{{ link.AU }}**, *{{ link.TI...">
+
+  
+
+  
+
+  
+  <link rel="alternate" type="application/rss+xml" title="Cermics" href="http://localhost:4000/feed.xml">
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+    
+      
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    
+      
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+    
+      
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+
+
+    
+      
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+
+
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="/assets/css/bootstrap-social.css">
+    
+      <link rel="stylesheet" href="/assets/css/beautifuljekyll.css">
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="/assets/css/staff.css">
+    
+  
+
+  
+  
+  
+
+  
+
+  
+  <meta property="og:site_name" content="Cermics">
+  <meta property="og:title" content="Cermics">
+  <meta property="og:description" content="## PhD Theses {% assign year = &quot;3000&quot; %} {% for link in site.data.theses reversed %} {% if link.PY != year %}{% assign year = link.PY %} {{ year }}{% endif %} {% if link.id != &quot;void&quot; %} {% else %} (pdf) {% endif %} **{{ link.AU }}**, *{{ link.TI...">
+
+  
+  <meta property="og:image" content="http://localhost:4000/assets/images/coriolis6.jpg">
+  
+
+  
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://localhost:4000/phd/">
+  <link rel="canonical" href="http://localhost:4000/phd/">
+  
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <meta name="twitter:site" content="@">
+  <meta name="twitter:creator" content="@">
+
+  <meta property="twitter:title" content="Cermics">
+  <meta property="twitter:description" content="## PhD Theses {% assign year = &quot;3000&quot; %} {% for link in site.data.theses reversed %} {% if link.PY != year %}{% assign year = link.PY %} {{ year }}{% endif %} {% if link.id != &quot;void&quot; %} {% else %} (pdf) {% endif %} **{{ link.AU }}**, *{{ link.TI...">
+
+  
+  <meta name="twitter:image" content="http://localhost:4000/assets/images/coriolis6.jpg">
+  
+
+  
+
+
+  
+
+  
+  
+
+  
+
+</head>
+
+
+<body>
+  
+
+
+  <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom top-nav-regular"><a class="navbar-brand" href="http://localhost:4000/">Cermics</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="main-navbar">
+    <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Organization</a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/overall">Overall Organization</a>
+                  <a class="dropdown-item" href="/applied-probability">Applied Probability</a>
+                  <a class="dropdown-item" href="/mas">Modeling, Analysis and Simulation</a>
+                  <a class="dropdown-item" href="/optimization">Optimization</a>
+            </div>
+          </li>
+        
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Activity</a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/phd">PhD</a>
+                  <a class="dropdown-item" href="/habilitation">Habilitation Theses</a>
+                  <a class="dropdown-item" href="/presentations-phd">Presentations by PhD students and postdocs</a>
+                  <a class="dropdown-item" href="/grants-and-contracts">Grants and contracts</a>
+                  <a class="dropdown-item" href="/teaching">Teaching</a>
+                  <a class="dropdown-item" href="/activity-reports">Activity reports</a>
+                  <a class="dropdown-item" href="/evaluation-reports">Evaluation reports</a>
+            </div>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link" href="/cauchy-fellowship">Cauchy Fellowship</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/news">News</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seminars</a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/colloquium">Colloquium</a>
+                  <a class="dropdown-item" href="/applied-mathematics">Applied Mathematics</a>
+                  <a class="dropdown-item" href="/young-researchers">Young Researchers</a>
+                  <a class="dropdown-item" href="https://cermics.github.io/smf">Stochastic Methods and Finance</a>
+                  <a class="dropdown-item" href="/data-transitions">Data Transitions</a>
+            </div>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link" href="/staff">People</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/how-to-find-us">How to Find Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://cermics.enpc.fr/~jpc">Test</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" id="nav-search-link" href="#" title="Search">
+            <span id="nav-search-icon" class="fa fa-search"></span>
+            <span id="nav-search-text">Search</span>
+          </a>
+        </li></ul>
+  </div>
+
+  
+
+  
+
+</nav>
+
+
+
+<div id="beautifuljekyll-search-overlay">
+
+  <div id="nav-search-exit" title="Exit search">✕</div>
+  <input type="text" id="nav-search-input" placeholder="Search">
+  <ul id="search-results-container"></ul>
+  
+  <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
+  <script>
+    SimpleJekyllSearch({
+      searchInput: document.getElementById('nav-search-input'),
+      resultsContainer: document.getElementById('search-results-container'),
+      json: '/assets/data/searchcorpus.json' 
+    });
+  </script>
+</div>
+
+
+
+
+
+  
+
+
+  <div id="header-big-imgs" data-num-img=1
+    
+    
+    
+    
+      data-img-src-1="http://localhost:4000/assets/images/coriolis6.jpg"
+    
+    
+    
+  ></div>
+
+
+<header class="header-section has-img">
+<div class="intro-header  big-img ">
+  
+  <div class="container-md">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+        <div class="page-heading">
+          <h1><br/></h1>
+          
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <span class='img-desc'></span>
+</div>
+
+
+
+</header>
+
+
+<main class=" container-md ">
+  <div class="row">
+    <div class=" col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 ">
+      
+
+      <h2 id="phd-theses">PhD Theses</h2>
+
+<hr />
+<h2>2025</h2>
+
+<p><a href="https://theses.fr/s346960"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Darshan, Shiva</strong>, <em>Analyse et simulation des quelques modèles de système des particules en interaction hors d’équilibre</em>,<br />
+ Thèse de doctorat Mathématiques Marne-la-vallée, ENPC 2025</p>
+
+<p><a href="https://theses.fr/2025UPSLD048"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Vanlaere, Roman</strong>, <em>Propriétés de contrôlabilité de l’équation de la chaleur sur des variétés sous-riemanniennes</em>,<br />
+ Thèse de doctorat Mathématiques appliquées Université Paris sciences et lettres 2025</p>
+
+<p><a href="https://theses.fr/2025UPSLD004"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Shao, Kexin</strong>, <em>Martingale optimal transport and graphon mean fieldgames</em>,<br />
+ Thèse de doctorat Mathématiques appliquées Université Paris sciences et lettres 2025</p>
+
+<p><a href="https://theses.fr/2025ENPC0061"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Kabalan, Abbas</strong>, <em>Model-order reduction for nonparametrized geometrical variability with application to aeronautics simulation</em>,<br />
+ Thèse de doctorat Mathématiques Appliquées Marne-la-vallée, ENPC 2025</p>
+
+<p><a href="https://theses.fr/2025ENPC0060"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Martínez parra, Camila</strong>, <em>Valeurs d’usage dans un système multinœuds pour des études prospectives en énergie</em>,<br />
+ Thèse de doctorat Mathématiques Marne-la-vallée, ENPC 2025</p>
+
+<p><a href="https://theses.fr/2025ENPC0057"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Blassel, Noé</strong>, <em>Analyse et échantillonnage de dynamiques métastables et hors d’équilibre</em>,<br />
+ Thèse de doctorat Mathématiques Marne-la-vallée, ENPC 2025</p>
+
+<p><a href="https://theses.fr/2025ENPC0053"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Loko, Dagbégnon</strong>, <em>Analyse de la stabilité des systèmes de dimension infinie et effets des perturbations : théorie et applications</em>,<br />
+ Thèse de doctorat Mathématiques Marne-la-vallée, ENPC 2025</p>
+
+<p><a href="https://theses.fr/2025ENPC0044"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Lefort, Albéric</strong>, <em>Multiscale approaches for reaction-diffusion equations and applications</em>,<br />
+ Thèse de doctorat Mathématiques Appliquées Marne-la-vallée, ENPC 2025</p>
+
+<p><a href="https://theses.fr/2025ENPC0036"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Ruget, Simon</strong>, <em>Effective approximations for multiscale PDEs based on limited information</em>,<br />
+ Thèse de doctorat Sciences de l’ingénieur Marne-la-vallée, ENPC 2025</p>
+
+<p><a href="https://theses.fr/2025ENPC0035"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Lefgoum, Raian</strong>, <em>Stochastic optimization fordesign and management of hydrogen supply chains</em>,<br />
+ Thèse de doctorat Mathématiques Marne-la-vallée, ENPC 2025</p>
+
+<p><a href="https://theses.fr/2025ENPC0034"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Mottier, Romain</strong>, <em>Hybrid high-order methods for the numerical simulation of elasto-acoustic wave propagation</em>,<br />
+ Thèse de doctorat Mathématiques Marne-la-vallée, ENPC 2025</p>
+
+<p><a href="https://theses.fr/2025ENPC0024"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Wang, Zuodong</strong>, <em>Schémas numériques efficaces pour les équations d’évolution avec singularités et chocs</em>,<br />
+ Thèse de doctorat Mathématiques Marne-la-vallée, ENPC 2025</p>
+
+<p><a href="https://theses.fr/2025ENPC0022"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Baty, Léo</strong>, <em>Combinatorial optimization and decision-focused learning : algorithms, implementations, and applications at Air France</em>,<br />
+ Thèse de doctorat Mathématiques Marne-la-vallée, ENPC 2025</p>
+
+<p><a href="https://theses.fr/2025ENPC0017"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Fornier, Zoé</strong>, <em>Stochastic optimization for complex systems with renewable energy.</em>,<br />
+ Thèse de doctorat Mathématiques Marne-la-vallée, ENPC 2025</p>
+
+<p><a href="https://theses.fr/2025ENPC0011"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Lombardo, Edoardo</strong>, <em>Approximation and regularity results for the Heston model and related processes</em>,<br />
+ Thèse de doctorat Mathématiques Marne-la-vallée, ENPC 2025</p>
+
+<hr />
+<h2>2024</h2>
+
+<p><a href="https://theses.fr/2024UPSLM032"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Sellem, Lev-Arcady</strong>, <em>Bosonic qubits and quantum reservoirs : taming the environment</em>,<br />
+ Thèse de doctorat Mathématique et automatique Université Paris sciences et lettres 2024</p>
+
+<p><a href="https://theses.fr/2024UEFL2066"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Lefki, Kacem</strong>, <em>Atomes d’un opérateur positif sur Lp et application à l’étude des équilibres d’un modèle SIS infini-dimensionnel</em>,<br />
+ Thèse de doctorat Mathématiques Université Gustave Eiffel 2024</p>
+
+<p><a href="https://theses.fr/2024ORLE1031"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Weibel, Julien</strong>, <em>Graphons de probabilités, limites de graphes pondérés aléatoires et chaînes de Markov branchantes cachées</em>,<br />
+ Thèse de doctorat Mathématiques Orléans 2024</p>
+
+<p><a href="https://theses.fr/2024ENPC0047"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Chaintron, Louis-Pierre</strong>, <em>Dynamiques contraintes en dimensions finie et infinie, approche par la théorie des grandes déviations et du contrôle</em>,<br />
+ Thèse de doctorat Mathématiques Marne-la-vallée, ENPC 2024</p>
+
+<p><a href="https://theses.fr/2024ENPC0046"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Bouvier, Louis</strong>, <em>Apprentissage structuré et optimisation combinatoire : contributions méthodologiques et routage d’inventaire chez Renault</em>,<br />
+ Thèse de doctorat Mathématiques Marne-la-vallée, ENPC 2024</p>
+
+<p><a href="https://theses.fr/2024ENPC0045"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Santet, Régis</strong>, <em>Fondations et optimisation d’échantillonneurs de Langevin</em>,<br />
+ Thèse de doctorat Mathématiques Marne-la-vallée, ENPC 2024</p>
+
+<p><a href="https://theses.fr/2024ENPC0044"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Andres, Hervé</strong>, <em>Modélisation et validation des scénarios économiques monde-réel en assurance : Prise en compte des propriétés trajectorielles</em>,<br />
+ Thèse de doctorat Mathématiques Marne-la-vallée, ENPC 2024</p>
+
+<p><a href="https://theses.fr/2024ENPC0032"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Letournel, Eloïse</strong>, <em>Theoretical and numerical analysis of static and dynamical models in electronic structure calculation</em>,<br />
+ Thèse de doctorat Mathématiques Marne-la-vallée, ENPC 2024</p>
+
+<p><a href="https://theses.fr/2024ENPC0031"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Kirsch, Alfred</strong>, <em>Analyse mathématique et numérique de méthodes de plongement en mécanique quantique</em>,<br />
+ Thèse de doctorat Mathématiques Marne-la-vallée, ENPC 2024</p>
+
+<p><a href="https://theses.fr/2024ENPC0030"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Lichtlé, Nathan</strong>, <em>Stabilization and control of dynamic systems : from classical methods to reinforcement learning</em>,<br />
+ Thèse de doctorat Mathématiques Marne-la-vallée, ENPC 2024</p>
+
+<p><a href="https://theses.fr/2024ENPC0016"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Vadillo fernandez, Nerea</strong>, <em>Risk valuation for weather derivatives related to the energy market.</em>,<br />
+ Thèse de doctorat Mathématiques Marne-la-vallée, ENPC 2024</p>
+
+<p><a href="https://theses.fr/2024ENPC0015"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Vidal, Laurent</strong>, <em>Méthodes de réduction de modèles pour la physique et la chimie quantiques</em>,<br />
+ Thèse de doctorat Mathématiques Marne-la-vallée, ENPC 2024</p>
+
+<hr />
+<h2>2023</h2>
+
+<p><a href="https://theses.fr/2023SORUS060"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Fuente Ruiz, María</strong>, <em>Adaptive tensor methods for high dimensional problems</em>,<br />
+ Thèse de doctorat Mathématiques Sorbonne université 2023</p>
+
+<p><a href="https://theses.fr/2023ENSL0070"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Pigeon, Thomas</strong>, <em>Méthodes d’échantillonage d’évènements rares et machine learning pour l’étude des mécanismes de réaction catalytiques</em>,<br />
+ Thèse de doctorat Chimie Lyon, École normale supérieure 2023</p>
+
+<p><a href="https://theses.fr/2023ENPC0051"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Flenghi, Roberta</strong>, <em>Théorème de la limite centrale pour des fonctionnelles non linéaires de la mesure empirique et pour le rééchantillonnage stratifié</em>,<br />
+ Thèse de doctorat Mathématiques Marne-la-vallée, ENPC 2023</p>
+
+<p><a href="https://theses.fr/2023ENPC0050"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Cauvin - vila, Jean</strong>, <em>Cross-diffusion systems in moving-boundary domains</em>,<br />
+ Thèse de doctorat Mathématiques Marne-la-vallée, ENPC 2023</p>
+
+<p><a href="https://theses.fr/2023ENPC0045"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Langlois, Hélène</strong>, <em>Kernels and quasi-kernels in digraphs.</em>,<br />
+ Thèse de doctorat Informatique Marne-la-vallée, ENPC 2023</p>
+
+<p><a href="https://theses.fr/2023ENPC0042"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Conjungo Taumhas, Yonah</strong>, <em>Criticality calculations in neutronics : model order reduction and a posteriori error estimators</em>,<br />
+ Thèse de doctorat Mathématiques Marne-la-vallée, ENPC 2023</p>
+
+<p><a href="https://theses.fr/2023ENPC0039"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Steins, Morgane</strong>, <em>An explicit hybrid high-order method for structural dynamics</em>,<br />
+ Thèse de doctorat Mathématiques Marne-la-vallée, ENPC 2023</p>
+
+<p><a href="https://theses.fr/2023ENPC0036"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Piccardo, Stefano</strong>, <em>Simulation of two-fluid immiscible Stokes flows using hybrid nonconforming methods and geometrically unfitted meshes</em>,<br />
+ 2023ENPC0036</p>
+
+<p><a href="https://theses.fr/2023ENPC0029"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Biezemans, Rutger</strong>, <em>Multiscale methods : non-intrusive implementation, advection-dominated problems and related topics</em>,<br />
+ Thèse de doctorat Mathématiques Marne-la-vallée, ENPC 2023</p>
+
+<p><a href="https://theses.fr/2023ENPC0009"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Hardy, Clément</strong>, <em>Estimation and testing of mixtures of Hilbert-valued features issued from a continuous dictionary</em>,<br />
+ Thèse de doctorat Mathématiques Marne-la-vallée, ENPC 2023</p>
+
+<hr />
+<h2>2022</h2>
+
+<p><a href="https://theses.fr/2022ENPC0047"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Dalle, Guillaume</strong>, <em>Machine learning and combinatorial optimization algorithms, with applications to railway planning</em>,<br />
+ Thèse de doctorat Mathématiques Marne-la-vallée, ENPC 2022</p>
+
+<p><a href="https://theses.fr/2022ENPC0045"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Niakh, Idrissa</strong>, <em>Réduction de modèle pour les inéquations variationnelles</em>,<br />
+ Thèse de doctorat Mathématiques Marne-la-vallée, ENPC 2022</p>
+
+<p><a href="https://theses.fr/2022ENPC0044"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Vessaire, Cyrille</strong>, <em>Design and operation management of oil-fields taking into account partially observed uncertainties</em>,<br />
+ Thèse de doctorat Mathématiques Marne-la-vallée, ENPC 2022</p>
+
+<p><a href="https://theses.fr/2022ENPC0042"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Kemlin, Gaspard</strong>, <em>Analyse numérique pour la théorie de la fonctionnelle de densité</em>,<br />
+ Thèse de doctorat Mathématiques Marne-la-vallée, ENPC 2022</p>
+
+<p><a href="https://theses.fr/2022ENPC0040"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Forcier, Maël</strong>, <em>Multistage stochastic optimization and polyhedral geometry</em>,<br />
+ Thèse de doctorat Mathématiques Marne-la-vallée, ENPC 2022</p>
+
+<p><a href="https://theses.fr/2022ENPC0039"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Nassif, Michel</strong>, <em>Arbres aléatoires : asymptotique de fonctionnelles et limites locales</em>,<br />
+ Thèse de doctorat Mathématiques Marne-la-vallée, ENPC 2022</p>
+
+<p><a href="https://theses.fr/2022ENPC0037"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Madmoun, Hachem</strong>, <em>Creating Investment Strategies Based on Machine Learning Algorithms</em>,<br />
+ Thèse de doctorat Mathématiques Marne-la-vallée, ENPC 2022</p>
+
+<p><a href="https://theses.fr/2022ENPC0032"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Goudey, Rémi</strong>, <em>Problèmes d’homogénéisation elliptique en présence de défauts</em>,<br />
+ Thèse de doctorat Mathématiques Marne-la-vallée, ENPC 2022</p>
+
+<p><a href="https://theses.fr/2022ENPC0031"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Sekkat, Inass</strong>, <em>Large scale Bayesian inference</em>,<br />
+ Thèse de doctorat Mathématiques Marne-la-vallée, ENPC 2022</p>
+
+<p><a href="https://theses.fr/2022ENPC0030"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Belkacemi, Zineb</strong>, <em>Machine Learning Methods for Molecular Dynamic Simulations</em>,<br />
+ Thèse de doctorat Mathématiques Marne-la-vallée, ENPC 2022</p>
+
+<p><a href="https://theses.fr/2022ENPC0025"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Blel, Mohamed Raed</strong>, <em>Model order reduction techniques for stochastic problems</em>,<br />
+ Thèse de doctorat Mathématiques Marne-la-vallée, ENPC 2022</p>
+
+<hr />
+<h2>2021</h2>
+
+<p><a href="https://theses.fr/2021PESC1103"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Coyaud, Rafaël</strong>, <em>Study of approximations of optimal transport problems and application to physics</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2021</p>
+
+<p><a href="https://theses.fr/2021PESC1102"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Cherchali, Adel</strong>, <em>Modélisation et méthodes numériques pour la gestion actif/passif</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2021</p>
+
+<p><a href="https://theses.fr/2021LYSEI058"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Henin, Clément</strong>, <em>Expliquer et justifier les systèmes de décisions algorithmiques</em>,<br />
+ Thèse de doctorat Informatique Lyon 2021</p>
+
+<p><a href="https://theses.fr/2021IPPAX089"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Benda, Robert</strong>, <em>Modélisation multi-échelle de nano-capteurs à base de nanotubes de carbone et de polymères conjugués pour la qualité de l’eau</em>,<br />
+ Thèse de doctorat Physique Institut polytechnique de Paris 2021</p>
+
+<p><a href="https://theses.fr/2021ENPC2004"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Bittar, Thomas</strong>, <em>Stochastic optimization of maintenance scheduling : blackbox methods, decomposition approaches - Theoretical and numerical aspects</em>,<br />
+ Thèse de doctorat Mathématiques Marne-la-vallée, ENPC 2021</p>
+
+<p><a href="https://theses.fr/2021ENPC0041"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Martin, Thomas</strong>, <em>Stochastic optimisation for the procurement of crude oil in refineries</em>,<br />
+ Thèse de doctorat Mathématiques Marne-la-vallée, ENPC 2021</p>
+
+<p><a href="https://theses.fr/2021ENPC0031"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Le franc, Adrien</strong>, <em>Subdifferentiability in convex and stochastic optimization applied to renewable power systems</em>,<br />
+ Thèse de doctorat Mathématiques Marne-la-vallée, ENPC 2021</p>
+
+<p><a href="https://theses.fr/2021ENPC0029"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Deschamps, Sébastien</strong>, <em>Demand based optimization for airline industry and load balancing</em>,<br />
+ Thèse de doctorat Mathématiques Marne-la-vallée, ENPC 2021</p>
+
+<p><a href="https://theses.fr/2021ENPC0025"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Dronnier, Dylan</strong>, <em>Modèles d’épidémies en dimension infinie et optimisation des stratégies de vaccination</em>,<br />
+ Thèse de doctorat Mathématiques Marne-la-vallée, ENPC 2021</p>
+
+<p><a href="https://theses.fr/2021ENPC0022"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Mehalla, Sophian</strong>, <em>Taux d’intérêt pour l’assurance : approximations et calibrages de modèles</em>,<br />
+ Thèse de doctorat Mathématiques Marne-la-vallée, ENPC 2021</p>
+
+<p><a href="https://theses.fr/2021ENPC0017"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Touboul, Adrien</strong>, <em>Model of margin, margin sensitivity analysis and uncertainty quantification in graphs of functions in complex industrial systems</em>,<br />
+ Thèse de doctorat Mathématiques Marne-la-vallée, ENPC 2021</p>
+
+<p><a href="https://theses.fr/2021ENPC0016"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Kahn, Ezechiel</strong>, <em>Matrices de covariance : diffusions, probabilités libres, et apprentissage profond</em>,<br />
+ Thèse de doctorat Mathématiques Marne-la-vallée, ENPC 2021</p>
+
+<hr />
+<h2>2020</h2>
+
+<p><a href="https://theses.fr/2020SORUS178"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Miraçi, Ani</strong>, <em>Solveurs multigrille ρ-robustes et adaptatifs guidés par des estimateurs a posteriori</em>,<br />
+ Thèse de doctorat Mathématiques appliquées Sorbonne université 2020</p>
+
+<p><a href="https://theses.fr/2020SORUS040"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Du, Qiming</strong>, <em>Sequential Monte Carlo and Applications in Molecular Dynamics</em>,<br />
+ Thèse de doctorat Mathématiques appliquées Sorbonne université 2020</p>
+
+<p><a href="https://theses.fr/2020PESC1045"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Kadnikov, Danil</strong>, <em>Jeux sous forme intrinsèque avec le modèle de Witsenhausen</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2020</p>
+
+<p><a href="https://theses.fr/2020PESC1040"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Tran, Duy-Nghi</strong>, <em>Programmation dynamique tropicale en optimisation stochastique multi-étapes</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2020</p>
+
+<p><a href="https://theses.fr/2020PESC1039"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Siraj-Dine, Sami</strong>, <em>Dynamics of electrons in 2D materials</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2020</p>
+
+<p><a href="https://theses.fr/2020PESC1038"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Ramil, Mouad</strong>, <em>Processus cinétiques dans les domaines à bord et quasi-stationnarité</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2020</p>
+
+<p><a href="https://theses.fr/2020PESC1037"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Milani, Riccardo</strong>, <em>Schémas de discrétisation Compatible Discrete Operator pour les équations de Navier–Stokes d’un fluide incompressible en régime instationnaire</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2020</p>
+
+<p><a href="https://theses.fr/2020PESC1036"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Margheriti, William</strong>, <em>Sur la stabilité du problème de transport optimal martingale</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2020</p>
+
+<p><a href="https://theses.fr/2020PESC1034"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Cohen, Victor</strong>, <em>Programmation en nombres entiers pour les diagrammes d’influence et les problèmes de maintenance d’une compagnie aérienne</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2020</p>
+
+<p><a href="https://theses.fr/2020PESC1030"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Bencheikh, Oumaima</strong>, <em>Analyse de l’erreur faible de discrétisation en temps et en particules d’équations différentielles stochastiques non linéaires au sens de McKean</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2020</p>
+
+<p><a href="https://theses.fr/2020PESC1003"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Plesse, François</strong>, <em>Intégration de Connaissances aux Modèles Neuronaux pour la Détection de Relations Visuelles Rares</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2020</p>
+
+<p><a href="https://theses.fr/2020PESC1001"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Marazzato, Frédéric</strong>, <em>Discrete element and time-integration methods forelasto-plasticity and dynamic cracking</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2020</p>
+
+<hr />
+<h2>2019</h2>
+
+<p><a href="https://theses.fr/2019SORUS475"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Daniel, Patrik</strong>, <em>Éléments finis hp adaptatifs avec contraction d’erreur garantie et solveurs multi-niveaux inexacts</em>,<br />
+ Thèse de doctorat Mathématiques appliquées Sorbonne université 2019</p>
+
+<p><a href="https://theses.fr/2019PESC2015"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Rigaut, Tristan</strong>, <em>Time decomposition methods for optimal management of energy storage under stochasticity</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2019</p>
+
+<p><a href="https://theses.fr/2019PESC1045"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Silva lopes, Laura</strong>, <em>Méthodes numériques pour la simulation d’évènements rares en dynamique moléculaire</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2019</p>
+
+<p><a href="https://theses.fr/2019PESC1043"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Pignet, Nicolas</strong>, <em>Méthodes hybrides d’ordre élevé pour la mécanique des solides non-linéaire</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2019</p>
+
+<p><a href="https://theses.fr/2019PESC1035"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Ferré, Grégoire</strong>, <em>Théorie des grandes déviations en physique statistique : quelques aspects théoriques et numériques</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2019</p>
+
+<p><a href="https://theses.fr/2019PESC1032"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Emprin, Gustave</strong>, <em>Une topologie pour les arbres labellés, application aux arbres aléatoires s-compacts</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2019</p>
+
+<p><a href="https://theses.fr/2019PESC1031"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Dubois, Benjamin</strong>, <em>Apprentissage multitâche pour la prévision de la consommation électrique</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2019</p>
+
+<p><a href="https://theses.fr/2019PESC1028"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Cao, Lingling</strong>, <em>Analyse mathématique de modèles de structures électroniques de matériaux avec défauts</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2019</p>
+
+<hr />
+<h2>2018</h2>
+
+<p><a href="https://theses.fr/2018PESC1158"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Cascavita Mellado, Karol</strong>, <em>Méthodes de discrétisation hybrides pour les problèmes de contact de Signorini et les écoulements de Bingham</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2018</p>
+
+<p><a href="https://theses.fr/2018PESC1147"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Pacaud, François</strong>, <em>Decentralized optimization for energy efficiency under stochasticity</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2018</p>
+
+<p><a href="https://theses.fr/2018PESC1140"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Benaceur, Amina</strong>, <em>Réduction de modèles en thermo-mécanique</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2018</p>
+
+<p><a href="https://theses.fr/2018PESC1135"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Terrier, Pierre</strong>, <em>Algorithmes stochastiques pour simuler l’évolution microstructurale d’alliages ferritiques : une étude de la dynamique d’amas</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2018</p>
+
+<p><a href="https://theses.fr/2018PESC1128"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Zhou, Alexandre</strong>, <em>Etude théorique et numérique de problèmes non linéaires au sens de McKean en finance</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2018</p>
+
+<p><a href="https://theses.fr/2018PESC1127"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Sciauveau, Marion</strong>, <em>Asymptotiques de fonctionnelles d’arbres aléatoires et de graphes denses aléatoires</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2018</p>
+
+<p><a href="https://theses.fr/2018PESC1120"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Josien, Marc</strong>, <em>Etude mathématique et numérique de quelques modèles multi-échelles issus de la mécanique des matériaux</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2018</p>
+
+<p><a href="https://theses.fr/2018PESC1115"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Roussel, Julien</strong>, <em>Analyse théorique et numérique de dynamiques non-réversibles en physique statistique computationnelle</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2018</p>
+
+<p><a href="https://theses.fr/2018PESC1113"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Gaillard de Saint Germain, Etienne</strong>, <em>Arbitrer coût et flexibilité dans la Supply Chain</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2018</p>
+
+<p><a href="https://theses.fr/2018PESC1111"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Gérard, Henri</strong>, <em>Stochastic optimization problems : decomposition and coordination under risk</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2018</p>
+
+<p><a href="https://theses.fr/2018LILUI071"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Iben Jellal, Sara</strong>, <em>Etude du suivi des wagons de fret à des fins logistiques par onde radio : impact des intérférences électromagnétiques sur le système proposé</em>,<br />
+ Thèse de doctorat Electronique, microélectronique, nanoélectronique et micro-ondes Université de Lille (2018-2021) 2018</p>
+
+<hr />
+<h2>2017</h2>
+
+<p><a href="https://theses.fr/2017SACLS351"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Louvin, Henri</strong>, <em>Development of an adaptive variance reduction technique for Monte Carlo particle transport</em>,<br />
+ Thèse de doctorat Physique des particules Université Paris-Saclay (ComUE) 2017</p>
+
+<p><a href="https://theses.fr/2017PSLED040"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Iacobucci, Alessandra</strong>, <em>Nonequilibrium stationary states of rotor and oscillator chains</em>,<br />
+ Thèse de doctorat Sciences Paris Sciences et Lettres (ComUE) 2017</p>
+
+<p><a href="https://theses.fr/2017PESC1228"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Nectoux, Boris</strong>, <em>Analyse spectrale et analyse semi-classique pour l’étude de la métastabilité en dynamique moléculaire</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2017</p>
+
+<p><a href="https://theses.fr/2017PESC1222"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Daudet, Laurent</strong>, <em>Quelques algorithmes de planification ferroviaire sur voie unique</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2017</p>
+
+<p><a href="https://theses.fr/2017PESC1144"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Masson, Yannick</strong>, <em>Existence et construction de réseaux de Chebyshev avec singularités et application aux gridshells</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2017</p>
+
+<p><a href="https://theses.fr/2017PESC1064"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Firozaly, Jérémy</strong>, <em>Homogénéisation d’équations de Hamilton-Jacobi et applications au trafic routier</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2017</p>
+
+<p><a href="https://theses.fr/2017PESC1063"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Faure, Gérôme</strong>, <em>Couplage micro/hydro pour la simulation d’ondes de choc et de détonation</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2017</p>
+
+<p><a href="https://theses.fr/2017PESC1046"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Bakhta, Athmane</strong>, <em>Modèles mathématiques et simulation numérique de dispositifs photovoltaïques</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2017</p>
+
+<p><a href="https://theses.fr/2017MONTS055"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Riedlbeck, Rita</strong>, <em>Adaptive algorithms for poromechanics and poroplasticity</em>,<br />
+ Thèse de doctorat Mathématiques et modélisation Montpellier 2017</p>
+
+<hr />
+<h2>2016</h2>
+
+<p><a href="https://theses.fr/2016PESC1089"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Bernard, Eddy</strong>, <em>Interaction de physisorption d’une molécule de dihydrogène avec une surface métallique</em>,<br />
+ Thèse de doctorat Chimie Paris Est 2016</p>
+
+<p><a href="https://theses.fr/2016PESC1072"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Vie, Jean-Léopold</strong>, <em>Second-order derivatives for shape optimization with a level-set method</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2016</p>
+
+<p><a href="https://theses.fr/2016PESC1067"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Sainct, Rémi</strong>, <em>Étude des instabilités dans les modèles de trafic</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2016</p>
+
+<p><a href="https://theses.fr/2016PESC1060"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Parmentier, Axel</strong>, <em>Quelques Algorithmes pour des problèmes de plus court chemin et d’opérations aériennes</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2016</p>
+
+<p><a href="https://theses.fr/2016PESC1057"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Ntovoris, Eleftherios</strong>, <em>Contribution à la théorie des EDP non linéaires avec applications à la méthode des surfaces de niveau, aux fluides non newtoniens et à l’équation de Boltzmann</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2016</p>
+
+<p><a href="https://theses.fr/2016PESC1052"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Madiot, François</strong>, <em>Méthodes éléments finis de type MsFEM pour des problèmes d’advection-diffusion</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2016</p>
+
+<p><a href="https://theses.fr/2016PESC1040"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Homman, Ahmed</strong>, <em>Développement de schémas numériques d’intégration de méthodes multi-échelles</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2016</p>
+
+<p><a href="https://theses.fr/2016PESC1039"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Fischer, Richard</strong>, <em>Modélisation de la dépendance pour des statistiques d’ordre et estimation non-paramétrique.</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2016</p>
+
+<p><a href="https://theses.fr/2016PESC1028"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Cantin, Pierre</strong>, <em>Approximation of scalar and vector transport problems on polyhedral meshes</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2016</p>
+
+<p><a href="https://theses.fr/2016PESC1022"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Al Gerbi, Anis</strong>, <em>Ninomiya-Victoir scheme : strong convergence, asymptotics for the normalized error and multilevel Monte Carlo methods</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2016</p>
+
+<hr />
+<h2>2015</h2>
+
+<p><a href="https://theses.fr/2015TELE0016"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Amziani, Mourad</strong>, <em>Modeling, evaluation and provisioning of elastic service-based business processes in the cloud</em>,<br />
+ Thèse de doctorat Informatique Evry, Institut national des télécommunications 2015</p>
+
+<p><a href="https://theses.fr/2015PESC1177"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Rey, Clément</strong>, <em>Étude et modélisation des équations différentielles stochastiques</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2015</p>
+
+<p><a href="https://theses.fr/2015PESC1128"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Minvielle, William</strong>, <em>Quelques problèmes liés à l’erreur statistique en homogénéisation stochastique</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2015</p>
+
+<p><a href="https://theses.fr/2015PESC1115"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Alrachid, Houssam</strong>, <em>Analyse mathématique de méthodes numériques stochastiques en dynamique moléculaire</em>,<br />
+ 2015PESC1115</p>
+
+<p><a href="https://theses.fr/2015PESC1110"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Blanc, Pierre</strong>, <em>Effets de rétroaction en finance : applications à l’exécution optimaleet aux modèles de volatilité</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2015</p>
+
+<p><a href="https://theses.fr/2015PESC1109"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Gontier, David</strong>, <em>Contributions mathématiques aux calculs de structures électroniques</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2015</p>
+
+<p><a href="https://theses.fr/2015PESC1035"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Smadi, Charline</strong>, <em>Modèles probabilistes de populations : branchement avec catastrophes et signature génétique de la sélection</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2015</p>
+
+<p><a href="https://theses.fr/2015PESC1034"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Sepulveda, Lilian Sofia</strong>, <em>Optimisation et contrôle viable de modèles épidémiologiques de dengue</em>,<br />
+ 2015PESC1034</p>
+
+<p><a href="https://theses.fr/2015PESC1033"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Sarrabezolles, Pauline</strong>, <em>Colourful linear programming</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2015</p>
+
+<p><a href="https://theses.fr/2015PESC1027"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Palidda, Ernesto</strong>, <em>Modélisation du smile de volatilité pour les produits dérivés de taux d’intérêt</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2015</p>
+
+<hr />
+<h2>2014</h2>
+
+<p><a href="https://theses.fr/2014PEST1113"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Mint Moustapha, Jyda</strong>, <em>Modélisation mathématique et simulation du trafic routier : analyse statistique de modèles d’insertion et simulation probabiliste d’un modèle cinétique</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2014</p>
+
+<p><a href="https://theses.fr/2014PEST1097"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Puscas, Maria Adela</strong>, <em>Méthode de couplage conservative entre un fluide compressible non-visqueux et une structure tridimensionnelle déformable pouvant se fragmenter</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2014</p>
+
+<p><a href="https://theses.fr/2014PEST1096"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Pradeau, Thomas</strong>, <em>Congestion games with player-specific cost functions</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2014</p>
+
+<p><a href="https://theses.fr/2014PEST1092"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Leclere, Vincent</strong>, <em>Contributions to decomposition methods in stochastic optimization</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2014</p>
+
+<p><a href="https://theses.fr/2014PEST1081"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Costeseque, Guillaume</strong>, <em>Contribution à l’étude du trafic routier sur réseaux à l’aide des équations d’Hamilton-Jacobi</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2014</p>
+
+<p><a href="https://theses.fr/2014PEST1080"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Chmaycem, Ghada</strong>, <em>Étude des équations des milieux poreux et des modèles de cloques</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2014</p>
+
+<p><a href="https://theses.fr/2014PEST1078"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Bonelle, Jérôme</strong>, <em>Opérateurs discrets compatibles pour la discrétisation sur maillages polyédriques des équations elliptiques et de Stokes</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2014</p>
+
+<p><a href="https://theses.fr/2014PEST1030"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Le Guilcher, Arnaud</strong>, <em>Méthodes de propagation d’interfaces</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2014</p>
+
+<p><a href="https://theses.fr/2014PEST1001"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Al Haj, Mohammad</strong>, <em>Modèles discrets de dislocations : ondes progressives et dynamique de particules</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2014</p>
+
+<p><a href="https://theses.fr/2014PA066471"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Reygner, Julien</strong>, <em>Comportements en temps long et à grande échelle de quelques dynamiques de collision.</em>,<br />
+ Thèse de doctorat Mathématiques Paris 6 2014</p>
+
+<p><a href="https://theses.fr/2014PA010075"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Regnier, Esther</strong>, <em>Interactions between aquaculture and fisheries, and the viability approach to risk management in harvested ecosystems</em>,<br />
+ Thèse de doctorat Sciences économiques Paris 1 2014</p>
+
+<p><a href="https://theses.fr/2014CERG0690"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Falaize, Benoit</strong>, <em>L’évolution de l’enseignement de l’histoire à l’école élémentaire de la Libération à nos jours (1945-2014) : débats et pratiques pédagogiques</em>,<br />
+ Thèse de doctorat Histoire - Cergy Cergy-Pontoise 2014</p>
+
+<hr />
+<h2>2013</h2>
+
+<p><a href="https://theses.fr/2013PEST1197"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Lusso, Christelle</strong>, <em>Modélisation numérique des écoulements gravitaires viscoplastiques avec transition fluide/solide</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2013</p>
+
+<p><a href="https://theses.fr/2013PEST1086"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Infante Acevedo, José Arturo</strong>, <em>Méthodes et modèles numériques appliqués aux risques du marché et à l’évaluation financière</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2013</p>
+
+<p><a href="https://theses.fr/2013PEST1076"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Casenave, Fabien</strong>, <em>Méthodes de réduction de modèles appliquées à des problèmes d’aéroacoustique résolus par équations intégrales</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2013</p>
+
+<p><a href="https://theses.fr/2013PEST1071"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Alais, Jean-Christophe</strong>, <em>Risque et optimisation pour le management d’énergies : application à l’hydraulique</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2013</p>
+
+<p><a href="https://theses.fr/2013PEST1012"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Jeunesse, Maxence</strong>, <em>Etude de deux problèmes de contrôle stochastique : put americain avec dividendes discrets et principe de programmation dynamique avec contraintes en probabilités</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2013</p>
+
+<p><a href="https://theses.fr/2013CERG0628"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Lahbabi, Salma</strong>, <em>Etude mathématique de modèles quantiques et classiques pour les matériaux aléatoires à l’échelle atomique</em>,<br />
+ Thèse de doctorat Mathématiques Cergy-Pontoise 2013</p>
+
+<hr />
+<h2>2012</h2>
+
+<p><a href="https://theses.fr/2012PEST1101"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Rousseau, Marie</strong>, <em>Propagation d’incertitudes et analyse de sensibilité pour la modélisation de l’infiltration et de l’érosion</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2012</p>
+
+<p><a href="https://theses.fr/2012PEST1088"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Joubaud, Rémi</strong>, <em>Modélisation mathématique et numérique des fluides à l’échelle nanométrique</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2012</p>
+
+<p><a href="https://theses.fr/2012PEST1086"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Hoscheit, Patrick</strong>, <em>Processus à valeurs dans les arbres aléatoires continus</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2012</p>
+
+<p><a href="https://theses.fr/2012PEST1084"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Hénard, Olivier</strong>, <em>Généalogie et Q-processus</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2012</p>
+
+<p><a href="https://theses.fr/2012PEST1073"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Ehrlacher, Virginie</strong>, <em>Quelques modèles mathématiques en chimie quantique et propagation d’incertitudes</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2012</p>
+
+<p><a href="https://theses.fr/2012PEST1066"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Chemla, Daniel</strong>, <em>Algorithms for optimizing shared mobility systems</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2012</p>
+
+<p><a href="https://theses.fr/2012PEST1065"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Chalhoub, Nancy</strong>, <em>Estimations a posteriori pour l’équation de convection-diffusion-réaction instationnaire et applications aux volumes finis</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2012</p>
+
+<p><a href="https://theses.fr/2012PEST1055"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Abbas-Turki, Lokman</strong>, <em>Calcul parallèle pour les problèmes linéaires, non-linéaires et linéaires inverses en finance</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2012</p>
+
+<hr />
+<h2>2011</h2>
+
+<p><a href="https://theses.fr/2011PEST1154"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Ahdida, Abdelkoddousse</strong>, <em>Processus matriciels : simulation et modélisation de la dépendance en finance</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2011</p>
+
+<p><a href="https://theses.fr/2011PEST1054"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Tryoen, Julie</strong>, <em>Méthodes de Galerkin stochastiques adaptatives pour la propagation d’incertitudes paramétriques dans les modèles hyperboliques</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2011</p>
+
+<p><a href="https://theses.fr/2011PEST1039"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Monasse, Laurent</strong>, <em>Analysis of a discrete element method and coupling with a compressible fluid flow method</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2011</p>
+
+<p><a href="https://theses.fr/2011PEST1012"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Costaouec, Ronan</strong>, <em>Numerical methods for homogenization : applications to random media</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2011</p>
+
+<hr />
+<h2>2010</h2>
+
+<p><a href="https://theses.fr/2010PEST1040"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Roux, Raphaël</strong>, <em>Étude probabiliste de systèmes de particules en interaction : applications à la simulation moléculaire</em>,<br />
+ Thèse de doctorat Mathématiques appliquées et applications des mathématiques Paris Est 2010</p>
+
+<p><a href="https://theses.fr/2010PEST1034"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Minoukadeh, Kimiya</strong>, <em>Deterministic and stochastic methods for molecular simulation</em>,<br />
+ Thèse de doctorat Mathématiques appliquées et applications des mathématiques Paris Est 2010</p>
+
+<p><a href="https://theses.fr/2010PEST1026"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Girardeau, Pierre</strong>, <em>Résolution de grands problèmes en optimisation stochastique dynamique et synthèse de lois de commande</em>,<br />
+ Thèse de doctorat Mathématiques appliquées et applications des mathématiques Paris Est 2010</p>
+
+<p><a href="https://theses.fr/2010PEST1019"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Doyen, David</strong>, <em>Numerical methods for dynamic contact and fracture problems</em>,<br />
+ Thèse de doctorat Mathématiques appliquées et applications des mathématiques Paris Est 2010</p>
+
+<p><a href="https://theses.fr/2010PEST1002"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Anantharaman, Arnaud</strong>, <em>Analyse mathématique de quelques modèles en calcul de structures électroniques et homogénéisation</em>,<br />
+ Thèse de doctorat Mathématiques appliquées et applications des mathématiques Paris Est 2010</p>
+
+<p><a href="https://theses.fr/2010ENPC1009"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Lioris, Eugénie</strong>, <em>Evaluation et optimisation de systèmes de taxis collectifs en simulation</em>,<br />
+ Thèse de doctorat Mathématiques, Informatique Marne-la-Vallée, ENPC 2010</p>
+
+<hr />
+<h2>2009</h2>
+
+<p><a href="/assets/theses/these-jegousse.pdf">(pdf)</a>
+  <strong>Siri-Jégousse, Arno</strong>, <em>Études généalogies dans des modèles de génétique des populations</em>,<br />
+ Thèse de doctorat Mathématiques, Université Paris Descartes</p>
+
+<p><a href="https://theses.fr/2009PEST1046"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Sbaï (Sbai), Mohamed</strong>, <em>Modélisation de la dépendance et simulation de processus en finance</em>,<br />
+ Thèse de doctorat Mathematiques Paris Est 2009</p>
+
+<p><a href="https://theses.fr/2009PEST1040"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Boyaval, Sébastien</strong>, <em>Mathematical modelling and numerical simulation in materials science</em>,<br />
+ Thèse de doctorat Mathématiques Paris Est 2009</p>
+
+<p><a href="https://theses.fr/2009PA066641"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Galicher, Hervé</strong>, <em>Analyse mathématique de modèles en nanophysique</em>,<br />
+ Thèse de doctorat Mathématiques appliquées Paris 6 2009</p>
+
+<hr />
+<h2>2008</h2>
+
+<p><a href="https://theses.fr/2008PEST0255"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Scotti, Simone</strong>, <em>Applications of the error theory using Dirichlet forms</em>,<br />
+ 2008PEST0255</p>
+
+<p><a href="https://theses.fr/2008ENPC0817"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Bencteux, Guy</strong>, <em>Amélioration d’une méthode de décomposition de domaine pour le calcul de structures électroniques</em>,<br />
+ Thèse de doctorat Mathématiques. Informatique Paris Est 2008</p>
+
+<p><a href="https://theses.fr/2008ENPC0814"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Deleurence, Amélie</strong>, <em>Modélisation mathématique et simulation numérique de la structure électronique de cristaux en présence des défauts ponctuels</em>,<br />
+ Thèse de doctorat Mathématique. Informatique Paris Est 2008</p>
+
+<p><a href="https://theses.fr/2008ENPC0813"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Sochala, Pierre</strong>, <em>Méthodes numériques pour les écoulements souterrains et couplage avec le ruissellement</em>,<br />
+ Thèse de doctorat Mathématiques. Informatique Paris Est 2008</p>
+
+<p><a href="https://theses.fr/2008ENPC0812"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Seck, Babacar</strong>, <em>Optimisation stochastique sous contrainte de risque et fonctions d’utilité</em>,<br />
+ Thèse de doctorat Mathématiques et informatiques Paris Est 2008</p>
+
+<p><a href="https://theses.fr/2008ENPC0809"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Ibrahim, Hassan</strong>, <em>Analyse de systèmes parabolique/Hamilton-Jacobi modélisant la dynamique de densités de dislocations en domaine borné</em>,<br />
+ Thèse de doctorat Mathématiques. Informatique Paris Est 2008</p>
+
+<hr />
+<h2>2007</h2>
+
+<p><a href="https://theses.fr/2007PA010003"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Dallagi, Anes</strong>, <em>Méthodes particulaires en commande optimale stochastique</em>,<br />
+ Thèse de doctorat Mathématiques appliquées Paris 1 2007</p>
+
+<p><a href="https://theses.fr/2007NICE4094"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Benjemaa, Mondher</strong>, <em>Étude et simulation numérique de la rupture dynamique des séismes par des méthodes d’éléments finis discontinus</em>,<br />
+ Thèse de doctorat Mathématiques appliquées Nice 2007</p>
+
+<p><a href="https://theses.fr/2007NICE4090"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Bouquet, Antoine</strong>, <em>Caractérisation de structures rayonnantes par une méthode Galerkin discontinu associée à une technique de domaines fictifs</em>,<br />
+ Thèse de doctorat Mathématiques appliquées Nice 2007</p>
+
+<p><a href="https://theses.fr/2007MARN0373"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>El Hajj, Ahmad</strong>, <em>Analyse théorique et numérique de la dynamique des densités de dislocations</em>,<br />
+ Thèse de doctorat Mathématiques appliquées Université de Marne-la-Vallée (1991-2019) 2007</p>
+
+<p><a href="https://theses.fr/2007ENPC0722"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Stephansen, Annette</strong>, <em>Méthodes de Galerkine discontinues et analyse d’erreur a posteriori pour les problèmes de diffusion hétérogène</em>,<br />
+ Thèse de doctorat Informatique et mathématiques Marne-la-vallée, ENPC 2007</p>
+
+<p><a href="https://theses.fr/2007ENPC0717"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Meunier, Sébastien</strong>, <em>Analyse d’erreur a postériori pour les couplages hydro-mécaniques et mise en oeuvre dans code_aster</em>,<br />
+ Thèse de doctorat Mathématiques Marne-la-vallée, ENPC 2007</p>
+
+<p><a href="https://theses.fr/2007ENPC0714"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Lelong, Jérôme</strong>, <em>Etude asymptotique des algorithmes stochastiques et calcul des prix des options parisiennes</em>,<br />
+ Thèse de doctorat Mathématiques appliquées Marne-la-vallée, ENPC 2007</p>
+
+<p><a href="https://theses.fr/2007ENPC0711"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Forcadel, Nicolas</strong>, <em>Contribution à l’analyse d’équations aux dérivées partielles décrivant le mouvement de fronts avec applications à la dynamique des dislocations</em>,<br />
+ Thèse de doctorat Informatique et mathématiques Marne-la-vallée, ENPC 2007</p>
+
+<p><a href="https://theses.fr/2007ENPC0710"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Gloria, Antoine</strong>, <em>Modélisation et méthodes numériques multi-échelles en élasticité non linéaire</em>,<br />
+ Thèse de doctorat Mathématiques appliquées Marne-la-vallée, ENPC 2007</p>
+
+<p><a href="https://theses.fr/2007ENPC0708"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Stoltz, Gabriel</strong>, <em>Quelques méthodes mathématiques pour la simulation moleculaire et multiéchelle</em>,<br />
+ Thèse de doctorat Mathématiques Marne-la-vallée, ENPC 2007</p>
+
+<p><a href="https://theses.fr/2007ENPC0701"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Ghorbel, Mohamed-Amin</strong>, <em>Analyse numérique de la dynamique des dislocations et applications à l’homogénéisation</em>,<br />
+ Thèse de doctorat Mathématiques. Informatique Marne-la-vallée, ENPC 2007</p>
+
+<hr />
+<h2>2006</h2>
+
+<p><a href="https://theses.fr/2006ENPCXXX8"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Guyon, Julien</strong>, <em>Modelisation probabiliste en finance et en biologie : Théorèmes limites et applications</em>,<br />
+ Thèse de doctorat Mathématiques appliquées Marne-la-vallée, ENPC 2006</p>
+
+<p><a href="https://theses.fr/2006ENPCXXX6"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Alfonsi, Aurélien</strong>, <em>Modélisation en risque crédit : calibration et discrétisation de modèles financiers</em>,<br />
+ Thèse de doctorat Mathématiques aplliquées. Probabilié Marne-la-vallée, ENPC 2006</p>
+
+<p><a href="https://theses.fr/2006ENPC0621"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Orriols, Antonin</strong>, <em>Algorithmes d’optimisation et de contrôle d’interface libre : application à la production industrielle d’aluminium</em>,<br />
+ Thèse de doctorat Mathématiques. Informatique Marne-la-vallée, ENPC 2006</p>
+
+<p><a href="https://theses.fr/2006ENPC0614"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Tardif d’Hamonville, Pierre</strong>, <em>Modélisation et simulation du transport advectif et diffusif en milieu poreux monophasique et diphasique</em>,<br />
+ Thèse de doctorat Mathématiques. Informatique Marne-la-vallée, ENPC 2006</p>
+
+<p><a href="https://theses.fr/2006ENPC0002"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Strugarek, Cyrille</strong>, <em>Approches variationnelles et autres contributions en optimisation stochastique</em>,<br />
+ Thèse de doctorat Mathématiques appliquées Marne-la-vallée, ENPC 2006</p>
+
+<hr />
+<h2>2005</h2>
+
+<p><a href="https://theses.fr/2005PA090063"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Blanchet, Adrien</strong>, <em>Formules de monotonie appliquées à des problèmes à frontière libre et de modélisation en biologie</em>,<br />
+ Thèse de doctorat Sciences. Mathématiques Paris 9 2005</p>
+
+<p><a href="https://theses.fr/2005PA066626"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Moreni, Nicola</strong>, <em>Méthodes de Monte Carlo et valorisation d’ options</em>,<br />
+ 2005PA066626</p>
+
+<p><a href="https://theses.fr/2005ENPC0025"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Barrault, Maxime</strong>, <em>Développement de méthodes rapides pour le calcul de structures électroniques</em>,<br />
+ Thèse de doctorat Mathématiques et informatique. Analyse numérique Marne-la-vallée, ENPC 2005</p>
+
+<p><a href="https://theses.fr/2005ENPC0010"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Bernacki, Marc</strong>, <em>Méthodes de type Galerkin discontinu pour la propagation des ondes en aéroacoustique</em>,<br />
+ Thèse de doctorat Mathématiques appliquées Marne-la-vallée, ENPC 2005</p>
+
+<p><a href="https://theses.fr/2005ENPC0005"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>El Alaoui Lakhnati, Linda</strong>, <em>Analyse d’esrreur a priori et a posteriori pour des méthodes d’éléments finis mixtes non-conformes</em>,<br />
+ Thèse de doctorat Mathématiques Marne-la-vallée, ENPC 2005</p>
+
+<p><a href="https://theses.fr/2005ENPC0001"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Poret, Maud</strong>, <em>Méthodes en maillages mobiles auto-adaptatifs pour des systèmes hyperboliques en une et deux dimensions d’espace</em>,<br />
+ Thèse de doctorat Mathématiques appliquées et application des mathématiques Marne-la-vallée, ENPC 2005</p>
+
+<hr />
+<h2>2004</h2>
+
+<p><a href="https://theses.fr/2004PA066510"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Auger, Anne</strong>, <em>Contributions théoriques et numériques à l’optimisation continue par algorithmes évolutionnaires</em>,<br />
+ Thèse de doctorat Mathématiques Paris 6 2004</p>
+
+<p><a href="https://theses.fr/2004PA066203"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Legoll, Frédéric</strong>, <em>Méthodes moléculaires et multi-échelles pour la simulation numérique des matériaux</em>,<br />
+ Thèse de doctorat Mathématiques appliquées Paris 6 2004</p>
+
+<p><a href="https://theses.fr/2004ENPC0034"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Andrieu, Laetitia</strong>, <em>Optimisation sous contrainte en probabilité</em>,<br />
+ Thèse de doctorat Mathématiques Marne-la-vallée, ENPC 2004</p>
+
+<p><a href="https://theses.fr/2004ENPC0031"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Arouna, Bouhari</strong>, <em>Méthodes de Monté Carlo et algorithmes stochastiques</em>,<br />
+ Thèse de doctorat Probabilités appliquées. Finance Marne-la-vallée, ENPC 2004</p>
+
+<p><a href="https://theses.fr/2004ENPC0023"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Gilotte, Laurent</strong>, <em>Incertitude, inertie et choix optimal : Modèles de contrôle optimal appliqués au choix de politiques de réduction des émissions de gaz à effet de serre</em>,<br />
+ Thèse de doctorat Mathématiques. Informatique Marne-la-vallée, ENPC 2004</p>
+
+<p><a href="https://theses.fr/2004ENPC0012"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Gati, Yousra</strong>, <em>Analyse mathématique et simulations numériques d’un modèle de fluides complexes</em>,<br />
+ Thèse de doctorat Mathématiques appliquées. Informatique Marne-la-vallée, ENPC 2004</p>
+
+<p><a href="https://theses.fr/2004ENPC0011"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Barty, Kengy</strong>, <em>Contributions à la discrétisation des contraintes de mesurabilité pour les problèmes d’optimisation stochastique</em>,<br />
+ Thèse de doctorat Mathématiques Marne-la-vallée, ENPC 2004</p>
+
+<p><a href="https://theses.fr/2004ENPC0006"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Lelièvre, Tony</strong>, <em>Modèles multi-échelles pour les fluides viscoélastiques</em>,<br />
+ Thèse de doctorat Mathématiques appliquées Marne-la-vallée, ENPC 2004</p>
+
+<p><a href="https://theses.fr/2004AIX11043"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Chane-Yook, Martine</strong>, <em>Etude d’une équation cinétique liée à l’effet Compton : modélisation et simulation 3D de la charge d’un satellite en environnement plasmique</em>,<br />
+ Thèse de doctorat Mathématiques appliquées Aix-Marseille 1 2004</p>
+
+<hr />
+<h2>2003</h2>
+
+<p><a href="https://theses.fr/2003ENPC0012"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Nguyen, Anh Laurent</strong>, <em>Calibration de modèles financiers par minimisation d’entropie relative et modèles avec sautsbTexte imprimé</em>,<br />
+ Thèse de doctorat Mathématiques. Informatique Marne-la-vallée, ENPC 2003</p>
+
+<p><a href="https://theses.fr/2003ENPC0009"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Canouet, Nicolas</strong>, <em>Méthode de Galerkin discontinu pour la résolution du système Maxwell sur des maillages localement raffinés non-conformes</em>,<br />
+ Thèse de doctorat Mathématiques appliquées Marne-la-vallée, ENPC 2003</p>
+
+<hr />
+<h2>2002</h2>
+
+<p><a href="https://theses.fr/2002NICE5759"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Madeline, Blaise</strong>, <em>Algorithmes évolutionnaires et résolution de problèmes de satifaction de contraintes en domaines finis</em>,<br />
+ Thèse de doctorat Informatique Nice 2002</p>
+
+<p><a href="https://theses.fr/2002ENPC0226"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Ben Haj Yedder, Adel</strong>, <em>Optimisation numérique et contrôle optimal : Applications en chimie moléculaire</em>,<br />
+ Thèse de doctorat Sciences. Mathématiques. Informatique Marne-la-vallée, ENPC 2002</p>
+
+<p><a href="https://theses.fr/2002ENPC0225"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Bongiovanni, Emmanuel</strong>, <em>Méthodes de relaxation pour les équations de Navier-Stokes compressibles</em>,<br />
+ Thèse de doctorat Sciences. Mathématiques et applications Marne-la-vallée, ENPC 2002</p>
+
+<p><a href="https://theses.fr/2002ENPC0224"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Fourestey, Gilles</strong>, <em>Simulation numérique et contrôle optimal d’intéractions fluide incompressible / structure par une méthode de Lagrange-Galerkin d’ordre 2 : Applications aux ouvrages d’art</em>,<br />
+ Thèse de doctorat Sciences. Mathématiques appliquées Marne-la-vallée, ENPC 2002</p>
+
+<p><a href="https://theses.fr/2002ENPC0212"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Aguiléra, Vincent</strong>, <em>Interrogation de documents XML</em>,<br />
+ Thèse de doctorat Mathématiques. Informatique Marne-la-vallée, ENPC 2002</p>
+
+<p><a href="https://theses.fr/2002ENPC0208"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Sylvand, Guillaume</strong>, <em>La méthode multipôle rapide en électromagnétisme : performances, parallèlisation, applications</em>,<br />
+ Thèse de doctorat Mathématiques appliquées Marne-la-vallée, ENPC 2002</p>
+
+<hr />
+<h2>2001</h2>
+
+<p><a href="https://theses.fr/2001PA066482"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Temam, Emmanuel</strong>, <em>Couverture approchée d’options exotiques : pricing des options asiatiques</em>,<br />
+ Thèse de doctorat Probabilité Paris 6 2001</p>
+
+<p><a href="https://theses.fr/2001NICE5618"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Dolean, Victorita</strong>, <em>Algorithmes par décomposition de domaine et accélération multigrille pour le calcul d’écoulement compressibles</em>,<br />
+ Thèse de doctorat Mathématiques Nice 2001</p>
+
+<p><a href="https://theses.fr/2001ENPC0023"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Noubir, Mouaoya</strong>, <em>Méthodes numériques et algorithmes probalistiques pour l’évaluation des dérivées exotiques des taux d’intérêts dans le cadre des modèles de marché des taux Libor et taux de Swap</em>,<br />
+ Thèse de doctorat Mathématiques appliquées, Probabilités et finances Marne-la-vallée, ENPC 2001</p>
+
+<p><a href="https://theses.fr/2001ENPC0022"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Chanrion, Olivier</strong>, <em>Simulation de l’influence de la propulsion plasmique sur la charge électrostatique d’un satellite en milieu magnétosphérique</em>,<br />
+ Thèse de doctorat Mathématiques appliquées Marne-la-vallée, ENPC 2001</p>
+
+<p><a href="https://theses.fr/2001ENPC0012"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Blanc, Xavier</strong>, <em>Problèmes mathématiques liés à la modélisation des solides à différentes échelles</em>,<br />
+ Thèse de doctorat Mathématiques et Informatique Marne-la-vallée, École Nationale des Ponts et Chaussées 2001</p>
+
+<hr />
+<h2>2000</h2>
+
+<p><a href="https://theses.fr/2000EVRY0011"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Ksas, Frédéric</strong>, <em>Méthodes de Monte-Carlo et suites à discrépance faible appliquées au calcul d’options en finance</em>,<br />
+ Thèse de doctorat Mathématiques Evry-Val d’Essonne 2000</p>
+
+<p><a href="https://theses.fr/2000ENPC0005"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Depinay, Jean-Marc</strong>, <em>Automatisation de méthodes de réduction de variance pour la résolution de l’équation de transport</em>,<br />
+ Thèse de doctorat Informatique et mathématiques appliquées Marne-la-vallée, ENPC 2000</p>
+
+<p><a href="https://theses.fr/2000ENPC0002"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Jautzy, Olivier</strong>, <em>Intégration de sources de données hétérogènes : Une approche langage</em>,<br />
+ Thèse de doctorat Informatique Marne-la-vallée, ENPC 2000</p>
+
+<hr />
+<h2>1999</h2>
+
+<p><a href="https://theses.fr/1999PA066350"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Monneau, Régis</strong>, <em>Problèmes de frontières libres, EDP elliptiques non linéaires et applications (en combustion, supraconductivité et élasticité)</em>,<br />
+ Thèse de doctorat Mathématiques Paris 6 1999</p>
+
+<p><a href="https://theses.fr/1999EPXX0023"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Clerc, Maureen</strong>, <em>Analyse par ondelettes de processus localement dilates, et application au gradient de texture</em>,<br />
+ Thèse de doctorat Sciences et techniques communes Palaiseau, Ecole polytechnique 1999</p>
+
+<p><a href="https://theses.fr/1999EPXX0011"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Sportisse, Bruno</strong>, <em>Contribution a la modelisation des ecoulements reactifs : reduction des modeles de cinetique chimique et simulation de la pollution atmospherique</em>,<br />
+ Thèse de doctorat Sciences et techniques communes Palaiseau, Ecole polytechnique 1999</p>
+
+<p><a href="https://theses.fr/1999ENPC9941"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Dvornikov, Michae͏̈l</strong>, <em>Dynamique du roulement des roues dans le cadre des systèmes à degré de liberté infini</em>,<br />
+ Thèse de doctorat Mathématiques. Informatique Marne-la-vallée, ENPC 1999</p>
+
+<p><a href="https://theses.fr/1999ENPC9923"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Remaki, Malika</strong>, <em>Méthodes numériques pour les équations de Maxwell instationnaires en milieu hétérogène</em>,<br />
+ Thèse de doctorat Physique Marne-la-vallée, ENPC 1999</p>
+
+<p><a href="https://theses.fr/1999ENPC9921"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Quadrat, Alban</strong>, <em>Analyse algébrique des systèmes de contrôle linéaires multidimensionels</em>,<br />
+ Thèse de doctorat Mathématiquqes appliquées Marne-la-vallée, ENPC 1999</p>
+
+<p><a href="https://theses.fr/1999ENPC9917"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Bostan, Mihai</strong>, <em>Etude numérique des solutions périodiques du système de Vlasov-Maxwell</em>,<br />
+ Thèse de doctorat Physique Marne-la-vallée, ENPC 1999</p>
+
+<p><a href="https://theses.fr/1999ENPC9901"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Jaume, Mathieu</strong>, <em>Contributions à la sémantique de la programmation logique</em>,<br />
+ Thèse de doctorat Sciences et techniques Marne-la-vallée, ENPC 1999</p>
+
+<hr />
+<h2>1998</h2>
+
+<p><a href="https://theses.fr/1998NICE5269"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Demphlous, Stéphane</strong>, <em>Gestion de la persistance au sein de systèmes réflexifs à objets</em>,<br />
+ Thèse de doctorat Informatique Nice 1998</p>
+
+<p><a href="https://theses.fr/1998ENPC9827"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Gerbeau, Jean-Frédéric</strong>, <em>Problèmes mathématiques et numériques posés par la modélisation de l’électrolyse de l’aluminium</em>,<br />
+ Thèse de doctorat Sciences et techniques Marne-la-vallée, ENPC 1998</p>
+
+<p><a href="https://theses.fr/1998ENPC9824"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Alliot, Fréféric</strong>, <em>Etude des équations stationnaires de Stokes et Navier-Stokes dans des domaines extérieurs</em>,<br />
+ Thèse de doctorat Physique Marne-la-vallée, ENPC 1998</p>
+
+<p><a href="https://theses.fr/1998ENPC9815"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Cancès, Eric</strong>, <em>Simulation moléculaire et effets d’environnement - Une perspective mathématique et numérique</em>,<br />
+ Thèse de doctorat Physique Marne-la-vallée, ENPC 1998</p>
+
+<p><a href="https://theses.fr/1998ENPC9810"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Caplain, Gilbert</strong>, <em>Propriétés de correction séquentielle dans un langage parallèle à mémoire partagée</em>,<br />
+ Thèse de doctorat Sciences appliquées Marne-la-vallée, ENPC 1998</p>
+
+<p><a href="https://theses.fr/1998ENPC9805"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Jourdain, Benjamin</strong>, <em>Sur l’interprétation probabiliste de quelques équations aux dérivées partielles non linéaires</em>,<br />
+ Thèse de doctorat Sciences et techniques communes Marne-la-vallée, ENPC 1998</p>
+
+<hr />
+<h2>1997</h2>
+
+<p><a href="https://theses.fr/1997PA090023"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Oppenheim, Henri</strong>, <em>Ondelettes et multifractals : Application à une fonction de Riemann en dimension 2</em>,<br />
+ Thèse de doctorat Sciences et techniques communes Paris 9 1997</p>
+
+<p><a href="https://theses.fr/1997PA077338"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>TOUBOL, ALAIN</strong>, <em>Etude de quelques modèles de systèmes désordonnés</em>,<br />
+ Thèse de doctorat Mathématiques appliquées Paris 7 1997</p>
+
+<p><a href="https://theses.fr/1997PA066061"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Delmas, Jean-François</strong>, <em>Quelques propriétés des superprocessus</em>,<br />
+ Thèse de doctorat Mathématiques Paris 6 1997</p>
+
+<p><a href="https://theses.fr/1997NICE5213"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Trombettoni, Gilles</strong>, <em>Algorithmes de maintien de solution par propagation locale pour les systèmes de contraintes</em>,<br />
+ Thèse de doctorat Informatique Nice 1997</p>
+
+<p><a href="https://theses.fr/1997NICE5105"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Bonnet, Frédéric</strong>, <em>Résolutions efficaces pour le système de Maxwell instationnaire</em>,<br />
+ Thèse de doctorat Mathématiques appliquées Nice 1997</p>
+
+<p><a href="https://theses.fr/1997ENPC9735"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Ezzine, Abdelhak</strong>, <em>Méthodes d’ondelettes pour l’analyse d’opérateurs</em>,<br />
+ Thèse de doctorat Sciences et techniques. Sciences et techniques communes Marne-la-vallée, ENPC 1997</p>
+
+<p><a href="https://theses.fr/1997ENPC9727"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Tolentino, Marc</strong>, <em>Résolution hautes fréquences d’équations intégrales par une méthode de discrétisation microlocale</em>,<br />
+ Thèse de doctorat Sciences et techniques communes. Physique Marne-la-vallée, ENPC 1997</p>
+
+<p><a href="https://theses.fr/1997ENPC9726"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Keriven, Renaud</strong>, <em>Equations aux dérivees partielles, évolutions de courbes et de surfaces et espaces d’échelle : Applications à la vision par ordinateur</em>,<br />
+ Thèse de doctorat Sciences appliquées Marne-la-vallée, ENPC 1997</p>
+
+<p><a href="https://theses.fr/1997ENPC9716"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Dourthe, Cédric</strong>, <em>Tomographie microonde d’objets enterrés. Application à l’auscultation radar</em>,<br />
+ Thèse de doctorat Sciences appliquées Marne-la-vallée, ENPC 1997</p>
+
+<p><a href="https://theses.fr/1997ENPC9711"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Salset, Thierry</strong>, <em>Correction séquentielle de programmes parallèles dans le modèle asynchrone et mémoire partagée</em>,<br />
+ Thèse de doctorat Sciences appliquées Marne-la-vallée, ENPC 1997</p>
+
+<p><a href="https://theses.fr/1997ENPC9703"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Depeyre, Sophie</strong>, <em>Étude de schémas d’ordre élevé en volumes finis pour des problèmes hyperboliques. Application aux équations de Maxwell, d’Euler et aux écoulements diphasiques disperses</em>,<br />
+ Thèse de doctorat Sciences et techniques communes. Physique Marne-la-vallée, ENPC 1997</p>
+
+<hr />
+<h2>1996</h2>
+
+<p><a href="https://theses.fr/1996EPXX0040"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Domelevo, Komla</strong>, <em>Analyse mathematique et numerique d’une modelisation cinetique d’un brouillard de gouttelettes dans un ecoulement gazeux turbulent</em>,<br />
+ Thèse de doctorat Physique Palaiseau, Ecole polytechnique 1996</p>
+
+<p><a href="https://theses.fr/1996ENPC9624"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Bouzoubaa, Mouhssine</strong>, <em>Hiérarchies de contraintes : Quelques approches de résolution</em>,<br />
+ Thèse de doctorat Sciences appliquées Marne-la-vallée, ENPC 1996</p>
+
+<p><a href="https://theses.fr/1996ENPC9616"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Ben Slimane, Mourad</strong>, <em>Etude du formalisme multi-fractal pour les fonctions</em>,<br />
+ Thèse de doctorat Sciences et techniques communes Marne-la-vallée, ENPC 1996</p>
+
+<hr />
+<h2>1995</h2>
+
+<p><a href="https://theses.fr/1995NICE4890"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Cioni, Jean-Pierre</strong>, <em>Résolution numérique des équations de Maxwell instationnaires par une méthode de volumes finis</em>,<br />
+ Thèse de doctorat Mathématiques Nice 1995</p>
+
+<p><a href="https://theses.fr/1995NICE4885"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Issautier, Didier</strong>, <em>Méthodes particulaires en cinétique des gaz et transport de particules chargées</em>,<br />
+ Thèse de doctorat Mathématiques Nice 1995</p>
+
+<p><a href="https://theses.fr/1995ENPC9527"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Hao, Kuangrong</strong>, <em>Algèbre de Lie et cinématique des mécanismes en boucles fermées</em>,<br />
+ Thèse de doctorat Informatique et mathématiques Marne-la-vallée, ENPC 1995</p>
+
+<p><a href="https://theses.fr/1995ENPC9523"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Piperno, Serge</strong>, <em>Simulation numérique de phénomènes d’interaction fluide-structure</em>,<br />
+ Thèse de doctorat Physique Marne-la-vallée, ENPC 1995</p>
+
+<p><a href="https://theses.fr/1995ENPC9504"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Chleq, Nicolas</strong>, <em>Contribution à l’étude du raisonnement temporel : résolution avec contraintes et application à l’abduction en raisonnement temporel</em>,<br />
+ Thèse de doctorat Mathématiques. Informatique Marne-la-vallée, ENPC 1995</p>
+
+<hr />
+<h2>1994</h2>
+
+<p><a href="https://theses.fr/1994PA090047"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>El Bouayachi (Elbouayachi), Taoufik</strong>, <em>CHIRP et analyse temps-fréquence avec recherche de la fréquence instantanée</em>,<br />
+ Thèse de doctorat Sciences et techniques communes Paris 9 1994</p>
+
+<p><a href="https://theses.fr/1994NICE4797"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Le Ménec, Stéphane</strong>, <em>Théorie des jeux dynamiques et techniques de programmation avancée appliquées au duel aérien à moyenne distance</em>,<br />
+ Thèse de doctorat Informatique Nice 1994</p>
+
+<p><a href="https://theses.fr/1994NICE4775"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Lejouad Chaari, Wided</strong>, <em>Étude et application des techniques de distribution pour un générateur de systèmes à base de connaissances</em>,<br />
+ Thèse de doctorat Informatique Nice 1994</p>
+
+<p><a href="https://theses.fr/1994EPXX0011"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Ern, Alexandre</strong>, <em>Théorie mathématique et numérique pour l’évaluation des coefficients de transport dans les mélanges gazeux polyatomiques</em>,<br />
+ Thèse de doctorat Mathématiques appliquées Palaiseau, Ecole polytechnique 1994</p>
+
+<p><a href="https://theses.fr/1994ENPC9425"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Angelo, Yves d’</strong>, <em>Analyse et simulation numérique de phénomènes liés à la combustion supersonique</em>,<br />
+ Thèse de doctorat Sciences appliquées. Physique Marne-la-vallée, ENPC 1994</p>
+
+<p><a href="https://theses.fr/1994ENPC9406"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Zhang, Xiaolan</strong>, <em>Analyse numérique des options américaines dans un modèle de diffusion avec des sauts</em>,<br />
+ Thèse de doctorat Sciences appliquées Marne-la-vallée, ENPC 1994</p>
+
+<hr />
+<h2>1993</h2>
+
+<p><a href="https://theses.fr/1993NICE4634"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Djossou, Coco</strong>, <em>Approche multi-processus pour la coopération entre systèmes à base de connaissances</em>,<br />
+ Thèse de doctorat Informatique Nice 1993</p>
+
+<p><a href="https://theses.fr/1993ISAL0030"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Lebastard, Franck</strong>, <em>Driver : une couche objet virtuelle persistante pour le raisonnement sur les bases de données relationnelles</em>,<br />
+ Thèse de doctorat Génie informatique Lyon, INSA 1993</p>
+
+<p><a href="https://theses.fr/1993EPXX0017"><img src="/assets/images/these-fr.svg" width="30" /></a>
+  <strong>Le Bris, Claude</strong>, <em>Quelques problèmes mathématiques en chimie quantique moleculaire</em>,<br />
+ Thèse de doctorat Mathématiques Palaiseau, Ecole polytechnique 1993</p>
+
+
+
+      
+
+      
+
+    </div>
+  </div>
+</main>
+
+
+  <footer>
+  <div class="container-md beautiful-jekyll-footer">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+      
+<ul class="list-inline text-center footer-links"><li class="list-inline-item">
+    <a href="mailto:julien.guieu@enpc.fr" title="Email me">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Email me</span>
+   </a>
+  </li><li class="list-inline-item">
+    <a href="https://www.facebook.com/EcoledesPonts" title="Facebook">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Facebook</span>
+   </a>
+  </li><li class="list-inline-item">
+    <a href="https://www.instagram.com/ecoledesponts" title="Instagram">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Instagram</span>
+   </a>
+  </li><li class="list-inline-item">
+    <a href="https://www.youtube.com/user/EcoledesPonts" title="YouTube">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">YouTube</span>
+   </a>
+  </li></ul>
+
+
+      
+      <p class="copyright text-muted">
+      
+        cermics
+        &nbsp;&bull;&nbsp;
+      
+      2026
+      &nbsp;&bull;&nbsp;
+      <a href="/legal-notice/">legal-notice</a>
+      
+
+      
+
+      
+
+      </p>
+      <p class="theme-by text-muted">
+        Powered by
+        <a href="https://beautifuljekyll.com">Beautiful Jekyll</a>
+      </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  
+  
+    
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+
+
+  
+    
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+
+  
+    
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+  
+
+
+
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+      <script src="/assets/js/beautifuljekyll.js"></script>
+    
+  
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,1303 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Beautiful Jekyll 6.0.1 | Copyright Dean Attali 2023 -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  
+
+  
+
+  
+
+  <title>Cermics</title>
+
+  
+  
+  <meta name="author" content="cermics">
+  
+
+  <meta name="description" content="### Cermics News
+
+{% for item in site.news reversed %}
+
+ {{ item.date | date : &quot;%A, %B %-d, %Y&quot; }}, {{ item.title  }}
+  {{ item.content }}
+
+
+----------------------
+{% endfor %}">
+
+  
+
+  
+
+  
+  <link rel="alternate" type="application/rss+xml" title="Cermics" href="http://localhost:4000/feed.xml">
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+    
+      
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    
+      
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+    
+      
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+
+
+    
+      
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+
+
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="/assets/css/bootstrap-social.css">
+    
+      <link rel="stylesheet" href="/assets/css/beautifuljekyll.css">
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="/assets/css/staff.css">
+    
+  
+
+  
+  
+  
+
+  
+
+  
+  <meta property="og:site_name" content="Cermics">
+  <meta property="og:title" content="Cermics">
+  <meta property="og:description" content="### Cermics News
+
+{% for item in site.news reversed %}
+
+ {{ item.date | date : &quot;%A, %B %-d, %Y&quot; }}, {{ item.title  }}
+  {{ item.content }}
+
+
+----------------------
+{% endfor %}">
+
+  
+  <meta property="og:image" content="http://localhost:4000/assets/images/coriolis.jpg">
+  
+
+  
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://localhost:4000/news/">
+  <link rel="canonical" href="http://localhost:4000/news/">
+  
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <meta name="twitter:site" content="@">
+  <meta name="twitter:creator" content="@">
+
+  <meta property="twitter:title" content="Cermics">
+  <meta property="twitter:description" content="### Cermics News
+
+{% for item in site.news reversed %}
+
+ {{ item.date | date : &quot;%A, %B %-d, %Y&quot; }}, {{ item.title  }}
+  {{ item.content }}
+
+
+----------------------
+{% endfor %}">
+
+  
+  <meta name="twitter:image" content="http://localhost:4000/assets/images/coriolis.jpg">
+  
+
+  
+
+
+  
+
+  
+  
+
+  
+
+</head>
+
+
+<body>
+  
+
+
+  <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom top-nav-regular"><a class="navbar-brand" href="http://localhost:4000/">Cermics</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="main-navbar">
+    <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Organization</a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/overall">Overall Organization</a>
+                  <a class="dropdown-item" href="/applied-probability">Applied Probability</a>
+                  <a class="dropdown-item" href="/mas">Modeling, Analysis and Simulation</a>
+                  <a class="dropdown-item" href="/optimization">Optimization</a>
+            </div>
+          </li>
+        
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Activity</a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/phd">PhD</a>
+                  <a class="dropdown-item" href="/habilitation">Habilitation Theses</a>
+                  <a class="dropdown-item" href="/presentations-phd">Presentations by PhD students and postdocs</a>
+                  <a class="dropdown-item" href="/grants-and-contracts">Grants and contracts</a>
+                  <a class="dropdown-item" href="/teaching">Teaching</a>
+                  <a class="dropdown-item" href="/activity-reports">Activity reports</a>
+                  <a class="dropdown-item" href="/evaluation-reports">Evaluation reports</a>
+            </div>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link" href="/cauchy-fellowship">Cauchy Fellowship</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/news">News</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seminars</a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/colloquium">Colloquium</a>
+                  <a class="dropdown-item" href="/applied-mathematics">Applied Mathematics</a>
+                  <a class="dropdown-item" href="/young-researchers">Young Researchers</a>
+                  <a class="dropdown-item" href="https://cermics.github.io/smf">Stochastic Methods and Finance</a>
+                  <a class="dropdown-item" href="/data-transitions">Data Transitions</a>
+            </div>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link" href="/staff">People</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/how-to-find-us">How to Find Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://cermics.enpc.fr/~jpc">Test</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" id="nav-search-link" href="#" title="Search">
+            <span id="nav-search-icon" class="fa fa-search"></span>
+            <span id="nav-search-text">Search</span>
+          </a>
+        </li></ul>
+  </div>
+
+  
+
+  
+
+</nav>
+
+
+
+<div id="beautifuljekyll-search-overlay">
+
+  <div id="nav-search-exit" title="Exit search">✕</div>
+  <input type="text" id="nav-search-input" placeholder="Search">
+  <ul id="search-results-container"></ul>
+  
+  <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
+  <script>
+    SimpleJekyllSearch({
+      searchInput: document.getElementById('nav-search-input'),
+      resultsContainer: document.getElementById('search-results-container'),
+      json: '/assets/data/searchcorpus.json' 
+    });
+  </script>
+</div>
+
+
+
+
+
+  
+
+
+  <div id="header-big-imgs" data-num-img=1
+    
+    
+    
+    
+      data-img-src-1="http://localhost:4000/assets/images/coriolis.jpg"
+    
+    
+    
+  ></div>
+
+
+<header class="header-section has-img">
+<div class="intro-header  big-img ">
+  
+  <div class="container-md">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+        <div class="page-heading">
+          <h1><br/></h1>
+          
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <span class='img-desc'></span>
+</div>
+
+
+
+</header>
+
+
+<main class=" container-md ">
+  <div class="row">
+    <div class=" col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 ">
+      
+
+      <h3 id="cermics-news">Cermics News</h3>
+
+<details>
+  <summary> Saturday, June 6, 2026,<br /> <i>Andrew McRae receives the 2026 SIAM Activity Group on Optimization Best Paper Prize</i></summary>
+  <p>Andrew McRae, together with Nicolas Boumal (EPFL, Switzerland), received the <a href="https://www.siam.org/programs-initiatives/prizes-awards/activity-group-prizes/siam-activity-group-on-optimization-early-career-prize/">2026 SIAM Activity Group on Optimization Best Paper Prize</a>. This prize is awarded every three years to the author(s) of the most outstanding paper, as determined by the prize committee, on a topic in optimization published in the four calendar years preceding the award year.</p>
+
+  <p>Andrew and Nicolas received the prize for their paper “<a href="https://doi.org/10.1137/23M1584642">Benign Landscapes of Low-Dimensional Relaxations for Orthogonal Synchronization on General Graphs</a>”. This work provides rigorous theoretical guarantees on the nonconvex landscape of a low-dimensional relaxation for orthogonal group synchronization problems, which appear in many practical applications such as robotics, imaging, and computer vision.</p>
+
+  <p>See the <a href="https://www.siam.org/publications/siam-news/articles/2026-may-prize-spotlight">interview</a> with the prize winners.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Friday, June 5, 2026,<br /> <i>Amaury Hayat was interviewed in Le Monde</i></summary>
+  <p>Amaury Hayat, permanent researcher in the MAS team, was interviewed in two articles of Le Monde about his work in AI for mathematics : <a href="https://www.lemonde.fr/sciences/article/2026/05/25/ce-que-l-ia-a-deja-revolutionne-dans-la-recherche-scientifique_6693676_1650684.html">Tout ce que l’IA a déjà révolutionné dans la recherche scientifique</a>
+and <a href="https://www.lemonde.fr/sciences/article/2026/05/25/les-agents-ces-ia-qui-prennent-des-decisions-de-chercheurs_6693673_1650684.html">Les agents, ces IA qui prennent des décisions de chercheurs</a>.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Thursday, June 4, 2026,<br /> <i>Amaury Hayat and François Charton were interviewed in Le Figaro</i></summary>
+  <p>Amaury Hayat, permanent researcher in the MAS team, and François Charton, PhD
+student at CERMICS, were interviewed in Le Figaro to share their opinion on the
+future of mathematics with the advent of AI : « Personne n’avait imaginé que
+cela irait aussi vite » : <a href="https://www.lefigaro.fr/sciences/personne-n-avait-imagine-que-cela-irait-aussi-vite-l-essor-fulgurant-et-inattendu-des-ia-en-mathematiques-ultime-bastion-de-l-intelligence-humaine-20260530">l’essor fulgurant et inattendu des IA en
+mathématiques, ultime bastion de l’intelligence humaine</a>.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Tuesday, June 2, 2026,<br /> <i>Amaury Hayat was interviewed in "Les Matins" on France Culture</i></summary>
+  <p>On Tuesday June 2nd, Amaury Hayat was interviewed together with Sylvia Serfaty, on AI and mathematics. 
+See the <a href="https://www.radiofrance.fr/franceculture/podcasts/les-matins/sylvia-serfaty-nouvelle-academicienne-les-maths-face-a-l-ia-reunification-moldavie-roumanie-quartiers-populaires-8094465">podcast link</a>.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Wednesday, April 1, 2026,<br /> <i>New position at CERMICS on data science/machine learning</i></summary>
+  <p>CERMICS is recruiting a researcher on topics of data science/machine learning,
+for 3+1 years, with teaching duties of about 100h per year. The funding is
+coming from the interdisciplinary center <a href="https://www.hi-paris.fr/" target="_blank">Hi!Paris</a>. See the <a href="https://cermics-lab.enpc.fr/wp-content/uploads/2026/04/Fiche_poste_HiPace_CERMICS_2026.pdf" target="_blank">job description</a>.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Monday, March 30, 2026,<br /> <i>Noé Blassel receives the SMAI-GAMNI PhD prize</i></summary>
+  <p>The <a href="http://smai.emath.fr/spip.php?article165&amp;lang=fr" target="_blank">SMAI-GAMNI Ph.D. prize</a> was created in 2005 to reward doctoral research in applied mathematics for engineering sciences.</p>
+
+  <p>Each year, the prize is awarded to a thesis defended in France within a range of topics, including PDEs, numerical analysis, scientific computing, mechanics, and climate modeling. The laureate is then nominated by SMAI-GAMNI as a candidate for the European Ph.D. awards of the <a href="https://eccomas.org/awards/phd-awards/" target="_blank">ECCOMAS society</a>.</p>
+
+  <p>This year, <a href="http://smai.emath.fr/spip.php?article977&amp;lang=fr" target="_blank">the prize was awarded</a> to <a href="https://noeblassel.github.io" target="_blank">Noé Blassel</a> for <a href="https://theses.hal.science/tel-05489722" target="_blank">his thesis</a> on the mathematical analysis and computation of trajectorial properties in molecular dynamics. Defended in December 2025, the thesis was carried out at CERMICS under the supervision of <a href="https://cermics-lab.enpc.fr/tony-lelievre/" target="_blank">Tony Lelièvre</a> and <a href="https://cermics-lab.enpc.fr/gabriel-stoltz/" target="_blank">Gabriel Stoltz</a>.</p>
+
+  <p>You can read <a href="https://ingenius.ecoledesponts.fr/articles/observer-linvisible-simuler-le-mouvement-des-atomes-grace-aux-maths/" target="_blank">his interview</a> about his prize.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Thursday, March 26, 2026,<br /> <i>Vincent Boulard receives the 2026 Perronet Prize</i></summary>
+  <p><a href="https://vincentboulard.fr" target="_blank">Vincent Boulard</a>, a PhD student at CERMICS and LJLL, receives the <a id="OWAce14348e-0b80-289a-ce6f-1e29339f520b" class="OWAAutoLink" title="https://ecoledesponts.fr/actualites-evenements/ceremonie-de-remise-de-diplomes-dingenieurs" href="https://ecoledesponts.fr/actualites-evenements/ceremonie-de-remise-de-diplomes-dingenieurs" target="_blank"> 2026 Perronet Prize</a>, which is awarded each year to the best graduating engineering student of the École nationale des ponts et chaussées.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Wednesday, March 11, 2026,<br /> <i>Nicolas Corvol was co-awarded the 2025 ROADEF Master’s Thesis prize</i></summary>
+  <p>The <a href="https://roadef.org/app/pages/prix-du-memoire-de-master-road" target="_blank">ROADEF RO/AD prize</a> aims at highlighting the research of Master’s students in Operational Research and Decision Analysis. <a href="https://nicolascorvol.github.io/" target="_blank">Nicolas Corvol</a>, a graduate of the <a href="https://uma.ip-paris.fr/mpro" target="_blank">MPRO</a> was awarded this prize for his Master’s thesis entitled “Integrating Revenue Management into the Supply Chain for New Vehicle Distribution”. This work was carried out in collaboration with Renault and CERMICS and lays the foundations of a CIFRE PhD thesis, under the supervision of <a href="https://louisbouvier.github.io/" target="_blank">Louis Bouvier</a> (Co-innovation lab) and <a href="http://axelparmentier.github.io" target="_blank">Axel Parmentier</a> (CERMICS).</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Monday, March 9, 2026,<br /> <i>Frédéric Meunier president of ROADEF</i></summary>
+  <p>On February 25, 2026, Frédéric Meunier was appointed president of the <a href="https://roadef.org/" target="_blank">Roadef</a>, the French Operations Research and Decision Support Society, for a two-year term. The mission of the society is to promote the scientific field of Operations Research and Decision Support in France.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Monday, February 2, 2026,<br /> <i>François Charton is appointed at the Scientific Advisory Board of ICARM</i></summary>
+  <p>François Charton is appointed at the Scientific Advisory Board of <a title="https://icarm.io/advisory-boards/" href="https://icarm.io/advisory-boards/"> ICARM</a>. ICARM is one of the seven Mathematical Scientific Research Institutes (MSRI) of the NSF, together with IAS at Princeton, IPAM at UCLA, IMSI at Chicago, or SLMath at Berkeley (formerly known as MSRI at Berkeley).</p>
+
+  <p>ICARM is located at Carnegie Mellon University and its mission is to support the use of new technologies for computer-aided reasoning and discovery in mathematics.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Thursday, January 29, 2026,<br /> <i>Congress of Young Researchers in Applied Mathematics</i></summary>
+  <p>École nationale des ponts et chaussées will host the 5th edition of the CJC-MA, the Congress of Young Researchers in Applied Mathematics, from March 2 to 4, 2026, in Champs-sur-Marne. Initiated by the SMAI, this annual conference is dedicated to early-career researchers in applied mathematics. This edition is organized by the laboratories <a id="OWAe8b37de5-2bfa-38cb-6d75-dbb51398607d" class="OWAAutoLink" href="https://cermics-lab.enpc.fr/" target="_blank" rel="noreferrer noopener"> CERMICS</a>, <a id="OWAca71a758-acc6-574b-5e38-a2c859776898" class="OWAAutoLink" href="https://lama-umr8050.fr/" target="_blank" rel="noreferrer noopener"> LAMA</a>, and <a id="OWA54c3b958-2178-cfc4-5a04-fb68fabe9fc4" class="OWAAutoLink" href="https://ligm.univ-eiffel.fr/home/" target="_blank" rel="noreferrer noopener"> LIGM</a>, which all belong to the <a href="https://labex-bezout.fr/bezout-federation/" target="_blank">Fédération Bézout</a>.</p>
+
+  <p>The conference has three main objectives:</p>
+  <ul>
+  <li>to promote scientific exchanges between early-career and more experienced researchers on a wide range of topics in applied mathematics and its applications;</li>
+  <li>to give visibility to the work of young researchers through oral presentations and poster sessions;</li>
+  <li>to provide a forum for discussion on opportunities and perspectives for scientific and/or academic careers.</li>
+  <li>The format is designed to encourage discussion, networking, and the presentation of ongoing research, and includes:
+– several parallel thematic sessions (1 hour 30 minutes) featuring contributed oral presentations, including one special session on the first day with invited speakers, possibly related to themes supported by specific grants; 	
+– one poster session (1 hour); 	
+— thematic round table (1 hour 30 minutes).</li>
+</ul>
+
+  <p>For further information, please visit the conference website <a id="OWA71993521-bc08-e457-2d0e-0aad25d1a9f1" class="OWAAutoLink" href="https://cjcma2026.sciencesconf.org/?forward-action=index&amp;forward-controller=index&amp;lang=en" target="_blank" rel="noreferrer noopener">CJC-MA 2026</a>.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Friday, January 9, 2026,<br /> <i>CERMICS is now a joint CNRS research unit</i></summary>
+  <p>As of January 1st, 2026, CERMICS became a joint research unit with CNRS (UMR 9032). See <a href="https://www.insmi.cnrs.fr/fr/cnrsinfo/le-cermics-un-laboratoire-dedie-aux-mathematiques-appliquees-devient-une-umr-du-cnrs" target="_blank">here</a> for a presentation of the laboratory in this context.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Thursday, December 11, 2025,<br /> <i>Hervé Andrès received the special mention of the jury of the SCOR Actuariat PhD prize</i></summary>
+  <p>Hervé Andrès received the special mention of the jury of the 2025 SCOR Actuariat PhD prize. His CIFRE thesis was co-supervised by Benjamin Jourdain (CERMICS) and Alexandre Boumezoued (Milliman). It is entitled “modelisation and validation of real-world economic scenarios for insurance : how to take the trajectorial properties into account?”.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Monday, December 8, 2025,<br /> <i>Amaury Hayat on French TV in E=M6</i></summary>
+  <p>Amaury Hayat was interviewed on <a id="OWAfbfa0f34-1dd5-85f1-0e19-1a0958be74d0" class="OWAAutoLink" href="https://www.m6.fr/e-m6-p_854/speciale-transports-c_13156252">French TV on Dec. 7th</a> to present part of his work about the control and regulation of traffic flow with the consortium CIRCLES.</p>
+
+  <p>This interview was part of the TV show E=M6 which dedicated an episode to road traffic flow.</p>
+
+  <p>At ENPC, this work on the CIRCLES project was carried out with Nathan Lichtlé and outside ENPC by several partners in particular UC Berkeley, Rutgers University–Camden, Vanderbilt University, Temple University and the University of Arizona.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Thursday, November 27, 2025,<br /> <i>Nathan Lichtlé receives the Prix de thèse des Ponts 2025</i></summary>
+  <p>Nathan Lichtlé, who completed his PhD at École des Ponts under the co-supervision of Amaury Hayat (CERMICS) and Alexandre Bayen (UC Berkeley), has received the 2025 Prix de thèse des Ponts, the school’s prize for the best PhD thesis, offered by the Fondation des Ponts. His thesis on the control of dynamic systems, combining theoretical advances with large-scale real-world applications in reinforcement learning and traffic systems, was praised for its scientific excellence, the clarity and pedagogy of his presentation, as well as his strong involvement in teaching, student supervision, and scientific outreach.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Friday, November 14, 2025,<br /> <i>Amaury Hayat and Fabian Glöckle were interviewed in Le Monde</i></summary>
+  <p>Amaury Hayat, permanent researcher in the MAS team, and Fabian Glöckle, third year PhD student under the supervision of Amaury Hayat and Gabriel Synnaeve (Meta), were interviewed in <a id="OWA88923fa4-9090-a07f-07e3-6e2f69070e6e" class="OWAAutoLink" href="https://www.lemonde.fr/sciences/article/2025/10/27/jusqu-ou-les-ia-vont-elles-concurrencer-les-mathematiques_6649857_1650684.html">Le Monde</a> concerning their research work on AI for mathematics. They discussed the future of mathematical research with the advent of AI and the progress that has already been made.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Wednesday, November 5, 2025,<br /> <i>Arrival of Andrew McRae</i></summary>
+  <p>Andrew McRae joined CERMICS on November 1st, 2025.  His research is on the mathematical theory of high-dimensional statistics and continuous optimization, particularly in the interaction of these two domains. He obtained his PhD in 2022 from Georgia Tech under the supervision of Mark Davenport and was then, from 2022 to 2025, a postdoctoral researcher at EPFL with Nicolas Boumal. For more information, visit his <a href="https://admcrae.github.io/" target="_blank">webpage</a>.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Thursday, September 25, 2025,<br /> <i>Tony Lelièvre co-organizes the IP Paris Research Day 2025</i></summary>
+  <p>Tony Lelièvre is the chair of the scientific committee for the forthcoming IP Paris Research Day 2025 which will be held on December 1, 2025 at Télécom Paris. This year, the scientific community will come together to celebrate the integration of École nationale des ponts et chaussées into IP Paris. The theme of this research day is: “Numerical Modeling in the Age of Ecological Transition.” This event will bring together researchers, PhD students, and technical staff from all member schools to showcase the research conducted within the IP Paris laboratories and to promote interdisciplinary exchanges.</p>
+
+  <p>For more information, see <a class="moz-txt-link-freetext" href="https://www.ip-paris.fr/en/news/ip-paris-research-day-2025">https://www.ip-paris.fr/en/news/ip-paris-research-day-2025</a></p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Wednesday, September 24, 2025,<br /> <i>Louis Bouvier receives the AMIES PhD prize (3rd prize)</i></summary>
+  <p>The Maths Enterprises &amp; Society (AMIES) Thesis Prize was established in 2013 to promote doctoral theses in mathematics conducted in collaboration with a socio-economic partner, with direct benefits for that partner. It is sponsored by the societies Société Mathématique de France, Société Française de Statistique, and SMAI. <a href="https://louisbouvier.github.io/" target="_blank">Louis Bouvier</a>, who completed his PhD with an industrial contract with Renault Group and was supervised by <a href="https://axelparmentier.github.io/" target="_blank">Axel Parmentier</a> at CERMICS, <a href="https://www.agence-maths-entreprises.fr/public/pages/activities/prix-de-these/prix2these-2025.html" target="_blank">receives the 3rd prize</a>.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Wednesday, August 27, 2025,<br /> <i>Award Ceremony at CERMICS</i></summary>
+  <p>On Wednesday, September 10, <a href="https://team.inria.fr/matherials/team-members/virginie-ehrlacher-galland/" target="_blank">Virginie Ehrlacher</a>, researcher at CERMICS, will be awarded the <a href="https://www.legiondhonneur.fr/fr/les-decorations/les-decorations-francaises/lordre-national-du-merite" target="_blank">National Order of Merit</a> Medal. The medal will be presented by <a href="https://www.ihes.fr/professeur/laure-saint-raymond/" target="_blank">Laure Saint-Raymond</a>, Professor at IHES. On this occasion, Laure Saint-Raymond will give a talk at the CERMICS Applied Mathematics Seminar at 2:30 pm in the seminar room. The medal ceremony will follow at 4:00 pm. During the ceremony, the <a href="https://amopa.asso.fr/lordre-des-palmes-academiques/" target="_blank">Palmes Académiques</a> will also be awarded to Isabelle Simunic, General Secretary of the laboratory, and Carolina Garcia Olmeido, Head of the Contracts Office at ENPC. The afternoon will conclude with a friendly reception.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Tuesday, July 8, 2025,<br /> <i>ICSP 2025 organized by CERMICS</i></summary>
+  <p>The École nationale des ponts et chaussées is organizing the 17th edition of the triannual <a id="LPlnk142853" title="https://icsp2025.org/" href="https://icsp2025.org/" target="_blank" rel="noopener noreferrer" data-auth="NotApplicable" data-linkindex="0">International Conference on Stochastic Programming</a>, from July 27th to August 1st, 2025. This congress is the premier international event on stochastic programming, and more generally decision under uncertainty. The event will bring together researcher and industrials from around the world to discuss recent progress and application of decision making under uncertainty. The conference will gather 300 persons and will take place mainly in the Coriolis building.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Wednesday, June 25, 2025,<br /> <i>Louis Bouvier was co-recipient of the VeRoLog Doctoral Dissertation Prize</i></summary>
+  <p>On June 17th, 2025, during the <a href="https://verolog2025.unitn.it/" target="_blank">VeRoLog2025 conference</a>, the prize for the best PhD thesis in Operations Research applied to Routing and Logistics in Europe was awarded. <a href="https://louisbouvier.github.io/" target="_blank">Louis Bouvier</a>, who completed his PhD with an industrial contract with Renault Group and was supervised by <a href="https://axelparmentier.github.io/" target="_blank">Axel Parmentier</a> at CERMICS, <a href="https://www.linkedin.com/posts/fabien-lehu%C3%A9d%C3%A9-5a130217a_last-week-we-had-the-great-pleasure-of-attending-activity-7342891945997856768-U5xH?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAACXz9jIBV4LsYT3fplRZG4gWpG4wfQTbOhc" target="_blank">co-received the prize</a>. Both his methodological contributions in Decision-Focused Learning and his practical applications at Renault Group were hailed.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Saturday, April 5, 2025,<br /> <i>Yating Hu receives the Shanghai Oustanding Graduate Award 2025</i></summary>
+  <p>Yating Hu, a PhD student at Tongji University supervised by Peipei Shang (Tongji) and Amaury Hayat (CERMICS), has received the Shanghai Oustanding Graduate Award 2025 for her PhD thesis on control and stabilization of networks of density-velocity channels. She had previously received the Tongji University 2024 Outstanding Doctoral Scholarship and the Tongji University 2024 Excellent Student Model Award. During her PhD, Yating Hu visited CERMICS for 18 months between February 2023 and August 2024.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Friday, April 4, 2025,<br /> <i>New position at CERMICS on data science/machine learning</i></summary>
+  <p>CERMICS is recruiting a researcher on topics of data science/machine learning,
+ for 5 years, with teaching duties of about 100h per year. The funding is coming
+ from the interdisciplinary center <a href="https://www.hi-paris.fr/" target="_blank">Hi!Paris</a>. See the <a href="https://cermics-lab.enpc.fr/wp-content/uploads/2025/04/HiParis_teaching_position_ENPC.pdf" target="_blank">job description</a>.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Thursday, April 3, 2025,<br /> <i>Etienne Bernard was interviewed in &#039;Le Monde&#039; about research and handicap</i></summary>
+  <p>Étienne Bernard was interviewed by Le Monde as part of a <a href="https://www.lemonde.fr/sciences/article/2025/04/01/signer-la-science-le-parcours-du-combattant-des-sourds-pour-acceder-a-la-recherche_6589474_1650684.html" target="_blank">report on deaf academics</a>. He shared his experience as a disabled mathematician. In particular, he talked about the difficulty of doing research as a deaf non-English speaker in an environment where spoken English is crucial to a “normal” career.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Monday, March 24, 2025,<br /> <i>Vincent Leclère invited to a public hearing at the Senate</i></summary>
+  <p><a href="http://leclere.github.io" target="_blank">Vincent Leclère</a> was invited to participate in the public hearing on the future of electrical networks, organized by the Parliamentary Office for the Evaluation of Scientific and Technological Choices <a id="LPlnk649558" title="https://www2.assemblee-nationale.fr/15/les-delegations-comite-et-office-parlementaire/office-parlementaire-d-evaluation-des-choix-scientifiques-et-technologiques" href="https://www2.assemblee-nationale.fr/15/les-delegations-comite-et-office-parlementaire/office-parlementaire-d-evaluation-des-choix-scientifiques-et-technologiques" target="_blank"> (OPECST - Senate and National Assembly)</a>. He presented the various mathematical challenges (and potential solutions) posed by the ongoing ecological transition: optimal management and valuation of flexibility to address uncertainties; better consideration of network physics; and the construction of efficient, robust, and fair market mechanisms.</p>
+
+  <p>You can view the intervention on the <a id="LPlnk547590" title="https://videos.senat.fr/video.5179701_67dbbebd7bb80.audition-publique-sur-les-reseaux-electriques?timecode=8255000" href="https://videos.senat.fr/video.5179701_67dbbebd7bb80.audition-publique-sur-les-reseaux-electriques?timecode=8255000" target="_blank"> Senate’s website</a>.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Monday, March 3, 2025,<br /> <i>Best PhD works in Transport and Logistics in France, CERMICS in the Spotlight</i></summary>
+  <p>On February 27th, 2025, during the ROADEF conference (the annual scientific meeting in operations research in France), the prize for the <a id="OWAbd11447a-cc60-8ce4-18da-f02ae28e0865" class="OWAAutoLink" href="https://perso.isima.fr/~lacomme/GT2L/#activite10">best PhD in</a><a id="OWAbd11447a-cc60-8ce4-18da-f02ae28e0865" class="OWAAutoLink" href="https://perso.isima.fr/~lacomme/GT2L/#activite10"> tra</a><a id="OWAbd11447a-cc60-8ce4-18da-f02ae28e0865" class="OWAAutoLink" href="https://perso.isima.fr/~lacomme/GT2L/#activite10">nsport</a><a id="OWAbd11447a-cc60-8ce4-18da-f02ae28e0865" class="OWAAutoLink" href="https://perso.isima.fr/~lacomme/GT2L/#activite10" target="_blank"> and logistics in France</a> was awarded. <a id="OWA031c019c-45cc-d355-fe6f-e0757cec5c54" class="OWAAutoLink" href="https://louisbouvier.github.io/" target="_blank">Louis Bouvier</a>, who completed his PhD with an industrial contract with Renault Group and was supervised by <a id="OWAa40ed43e-0238-bf17-a8f8-fbb48e51c5a9" class="OWAAutoLink" href="https://axelparmentier.github.io/" target="_blank">Axel Parmentier</a> at CERMICS, received the first prize. <a id="OWAaf6895bf-82c8-51cd-b22c-d90944a49ac4" class="OWAAutoLink" href="https://ysu1028.github.io/" target="_blank">Yue Su</a> and <a id="OWAe320fbe4-38b7-5dd3-bf7c-da8aaf54e445" class="OWAAutoLink" href="https://prunett.github.io/" target="_blank">Thibault Prunet</a>, who joined CERMICS for their postdocs, were awarded the second prize. This demonstrates the excellence of the optimization team at the laboratory!</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Monday, February 24, 2025,<br /> <i>École des Ponts organizes the ROADEF</i></summary>
+  <p>The École nationale des ponts et chaussées is organizing the 26th edition of the annual <a href="https://roadef2025.org/" target="_blank">ROADEF congress of the French Society for Operational Research and Decision Support</a>, from February 26 to 28, 2025. The organizing committee includes researchers from the laboratories CERMICS and LVMT. This congress is the largest French-speaking event aimed at bringing together researchers from various laboratories in combinatorial optimization, operational research, and industrial engineering. The objective is to promote exchanges and collaborations between researchers and industry professionals, as well as to contribute to the training of young researchers. The conference will bring together 600 persons and will take place in the Coriolis and Carnot buildings.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Monday, February 17, 2025,<br /> <i>Virginie Ehrlacher was distinguished as &quot;chevalier dans l&#039;ordre national du mérite&quot;</i></summary>
+  <p>Virginie Ehrlacher was distinguished as <a href="https://en.wikipedia.org/wiki/Ordre_national_du_M%C3%A9rite" target="_blank">“chevalier dans l’ordre national du mérite”</a>.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Friday, January 24, 2025,<br /> <i>Julien Guyon live on TV</i></summary>
+  <p>Julien Guyon was live on French TV on <a href="https://www.lequipe.fr/Football/Actualites/Psg-brest-monaco-lille-les-scenarios-plus-ou-moins-improbables-de-la-7e-journee-de-ligue-des-champions-pour-les-clubs-francais/1533644" target="_blank">January 20</a> and <a href="https://www.lequipe.fr/Football/Actualites/Un-nul-contre-stuttgart-suffirait-au-psg-pour-jouer-les-play-offs/1534345" target="_blank">January 22</a> (right after the end of the UEFA Champions League
+games) in the popular sports TV program L’Equipe du Soir on La chaîne L’Équipe
+to comment on the probabilities of teams advancing to the round of 16/playoffs.</p>
+
+  <p>The new format of the Champions League (with a league phase where all 36 teams
+are ranked in a unique table) makes it quite tricky to evaluate those
+probabilities. It also raises a very natural new question for fans: aside from
+my team’s game, which other games should I watch (because their outcomes have
+the higher impact on the chances of my team advancing)? Julien came up with a
+new mathematical indicator of the importance of a game, explained in the
+video. The underlying statistical Poisson model on goals scored is based on the
+Elo rating of European soccer teams.</p>
+
+  <p>Julien’s work was also featured in two articles in the daily sports newspaper
+L’Équipe on <a href="https://www.lequipe.fr/Football/Actualites/Le-psg-ne-peut-pas-etre-elimine-de-la-ligue-des-champions-des-ce-mercredi-brest-ne-sera-pas-sur-d-etre-qualifie-pour-les-huitiemes/1534111" target="_blank">January 21</a> and <a href="https://www.lequipe.fr/Football/Actualites/Le-psg-qualifie-et-elimine-si-les-scenarios-de-la-derniere-journee-en-ligue-des-champions/1534400" target="_blank">January 22</a> as well as in the newspaper<a href="https://www.letelegramme.fr/sports/football/stade-brestois/ligue-des-champions-avant-la-7e-journee-brest-a-317-de-chances-de-terminer-dans-le-top-8-6745182.php" target="_blank"> Le Télégramme</a>.</p>
+
+  <p><img class="aligncenter wp-image-5214" src="https://cermics-lab.enpc.fr/wp-content/uploads/2025/01/Guyon_1-300x168.png" alt="Guyon_1" width="395" height="221" /></p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Thursday, January 9, 2025,<br /> <i>Arrival of David Gontier at CERMICS</i></summary>
+  <p>David Gontier joined the Modeling, Analysis and Simulation team at CERMICS on January 1st, 2025. His research interests lie in applied mathematics for quantum physics and quantum chemistry. He defended his PhD in 2015 at CERMICS under the supervision of Éric Cancès. From 2016 to 2024, he held the position of Maître de Conférence at Université Paris-Dauphine. He obtained his Habilitation in 2024. For more information, visit his <a href="http://cermics.enpc.fr/~gontierd/" target="_blank">webpage</a>.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Wednesday, January 8, 2025,<br /> <i>Abbas Kabalan winner of the first prize of the NeurIPS 2024 ML4CFD challenge</i></summary>
+  <p>Abbas Kabalan, PhD student at CERMICS in collaboration with SAFRANTech, won the first prize of the <a href="https://ml-for-physical-simulation-challenge.irt-systemx.fr/airfoil-challenge-neurips2024/" target="_blank">IRT System’X NeurIPS 2024 ML4CFD challenge</a> together with Fabien Casenave (see <a href="https://www.linkedin.com/posts/institut-de-recherche-technologique-systemx_ml4cfd-machinelearning-airfoil-activity-7275088146659176448-qSE1/" target="_blank">announcement</a>).</p>
+
+  <p>The integration of machine learning (ML) techniques for addressing intricate
+physics problems is increasingly recognized as a promising avenue for
+expediting simulations. However, assessing ML-derived physical models poses a
+significant challenge for their adoption within industrial contexts. This
+competition is designed to promote the development of innovative ML approaches
+for tackling physical challenges, leveraging the recently introduced unified
+evaluation framework known as Learning Industrial Physical Simulations
+(LIPS). Building upon the preliminary edition held from November 2023 to March
+2024, this iteration centers on a task fundamental to a well-established
+physical application: airfoil design simulation, utilizing the proposed
+AirfRANS dataset.</p>
+
+  <p>The competition evaluates solutions based on various criteria encompassing ML
+accuracy, computational efficiency, Out-Of-Distribution performance, and
+adherence to physical principles. Notably, this competition represents a
+pioneering effort in exploring ML-driven surrogate methods aimed at optimizing
+the trade-off between computational efficiency and accuracy in physical
+simulations. Hosted on the Codabench platform, the competition offers online
+training and evaluation for all participating solutions.</p>
+
+  <p>The solution proposed by Abbas Kabalan, based on his PhD work, obtained the
+highest evaluation. Congratulations to him!</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Friday, November 29, 2024,<br /> <i>Julien Guyon Named &quot;Quant Of The Year&quot; </i></summary>
+  <p>Julien Guyon has been named <a href="https://www.risk.net/awards/7960375/quant-of-the-year-julien-guyon" target="_blank">“Quant of the Year”</a> by Risk, the leading financial risk management magazine. The Risk Awards are the longest-running and most prestigious awards for firms and individuals involved in quantitative finance and financial risk management.</p>
+
+  <p>Risk readers and contributors, which include quantitative analysts and financial engineers, voted Julien Guyon to receive the honor. Julien Guyon was recognized on November 26 at the Risk Awards 2025 ceremony in London.</p>
+
+  <p>Julien Guyon was selected for his overall contributions to modern quantitative finance and volatility modeling, in particular the development of path-dependent volatility models and his decisive contributions to the joint calibration of S&amp;P 500 and VIX smiles, as well as two technical papers published in Risk in <a href="https://www.risk.net/cutting-edge/7958175/neural-joint-sp-500vix-smile-calibration" target="_blank">December 2023</a> (co-authored with with Scander Mustapha) and <a href="https://www.risk.net/cutting-edge/7958955/fast-exact-joint-sp-500vix-smile-calibration-in-discrete-and-continuous-time" target="_blank">February 2024</a> (co-authored with Florian Bourgey).</p>
+
+  <p>He says: “I am truly honored to have been voted Quant of the Year 2025 by
+Risk. It is a great feeling to see my work on path-dependent volatility and on
+the joint calibration of S&amp;P 500 and VIX smiles recognized by such a major
+award. This achievement would not have been possible without my co-authors and
+collaborators, whom I warmly thank, with a special thank you to Scander Mustapha
+and Florian Bourgey, my co-authors on the awarded papers, and to my longtime
+friend and co-author Pierre Henry-Labordère. I am also very grateful to Societe
+Generale, Bloomberg, École nationale des ponts et chaussées, and BNP Paribas for
+their support throughout my career. And I look forward to contributing to
+understanding financial markets even better in the years to come!”</p>
+
+  <p>See <a href="https://ecoledesponts.fr/en/ecole-nationale-des-ponts-et-chaussees-professor-julien-guyon-named-quant-year" target="_blank">here</a> for more info.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Friday, November 22, 2024,<br /> <i>An AI method by François Charton that resolves a 30-year conjecture mentioned in the New Scientist</i></summary>
+  <p>François Charton, research engineer at Meta and PhD student at CERMICS, Jordan Ellenberg (U. Wisconsin), Adam Wagner (Deepmind), Geordie Williamson (U. Sydney), were interviewed by the New Scientist on their <a href="https://arxiv.org/abs/2411.00566" target="_blank">recent paper</a> where they design an AI method called PatternBoost to generate interesting construction in mathematics coupling Transformers and classical search algorithm (see the <a href="https://www.newscientist.com/article/2456653-ai-maths-assistant-could-help-solve-problems-that-humans-are-stuck-on/" target="_blank">news</a>). As an example of application, they find a counter-example to a conjecture of 1992 due to Graham.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Wednesday, November 6, 2024,<br /> <i>François Charton and Amaury Hayat&#039;s work on featured in the New Scientists</i></summary>
+  <p>François Charton (PhD student at CERMICS and research engineer at Meta) and <a href="http://cermics.enpc.fr/~hayata/" target="_blank">Amaury Hayat</a>’s (researcher at CERMICS) <a href="https://openreview.net/pdf?id=kOMrm4ZJ3m" target="_blank">work</a> was <a href="https://www.newscientist.com/article/2452780-meta-ai-tackles-maths-problems-that-stumped-humans-for-over-a-century/" target="_blank">featured in the New Scientist</a>. In collaboration with Alberto Alfarano (research engineer at Meta), their work consist in training deep language models to find global Lyapunov function for systems of ordinary differential equations, a mathematical problem open in general.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Friday, August 30, 2024,<br /> <i>Julien Guyon comments on the new format of the UEFA Champions League live on French TV</i></summary>
+  <p>Julien Guyon was interviewed live on French TV on August 29, 2024 to comment on the new format of the UEFA Champions League (L’Equipe du Soir, on La chaîne L’Equipe). You can see the replay <a id="LPlnk158470" class="OWAAutoLink" title="https://www.lequipe.fr/tv/replay/l-equipe-du-soir-du-29-aout/20195821" href="https://www.lequipe.fr/tv/replay/l-equipe-du-soir-du-29-aout/20195821"> here</a> (from 11’45’’ to 22’). Julien Guyon was also <a id="LPlnk603575" class="OWAAutoLink" title="https://www.lequipe.fr/Football/Actualites/Combien-de-points-faudra-t-il-pour-esperer-rejoindre-les-playoffs-de-ligue-des-champions/1504378" href="https://www.lequipe.fr/Football/Actualites/Combien-de-points-faudra-t-il-pour-esperer-rejoindre-les-playoffs-de-ligue-des-champions/1504378"> interviewed</a> by the daily sports newspaper L’Equipe, both in the print and online versions.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Thursday, August 29, 2024,<br /> <i>Alexandre Ern&#039;s paper (M2AN, 2016) received Frontiers of Science Award</i></summary>
+  <p>A. Ern’s paper on <a href="https://www.esaim-m2an.org/articles/m2an/abs/2016/03/m2an150026/m2an150026.html" target="_blank"> Bridging the hybrid high-order and hybridizable discontinuous Galerkin methods</a> (M2AN, 2016, with B. Cockburn and D. Di Pietro) was one of the three papers in Numerical Analysis receiving the Frontiers of Science Award at the <a href="http://www.icbs.cn" target="_blank">International Congress of Basic Science</a> (Beijing, 2024).</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Thursday, June 20, 2024,<br /> <i>Nerea Vadillo&#039;s doctoral thesis was awarded the Prix des Sciences du Risque 2024</i></summary>
+  <p>Nerea Vadillo’s doctoral thesis was awarded the Prix des Sciences du Risque 2024 by the Fondation Optimind Part of Accenture, in partnership with AMRAE, France Assureurs and the Institut des Actuaires (<a href="https://www.sciencesdurisque.com/laureats2024">https://www.sciencesdurisque.com/laureats2024</a>). The award was presented on June 18 at the Pavillon Élysée in Paris, attended by over 200 insurance, risk management and academic professionals. With the growing demand for financial tools to transfer climate risk, Nerea Vadillo’s thesis contributes to the development of new models and mathematical techniques to better assess the risks of temperature-related derivatives. This thesis was carried out in partnership with AXA Climate under the CIFRE program, and was supervised by Aurélien Alfonsi (CERMICS).</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Tuesday, March 26, 2024,<br /> <i>Cauchy postdoctoral fellowship</i></summary>
+  <p>CERMICS is delighted to announce the opening of the Cauchy postdoctoral fellowship. Please visit the <a href="https://cermics-lab.enpc.fr/cauchy-fellowship/" target="_blank">dedicated webpage</a> for more information.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Monday, March 25, 2024,<br /> <i>2024 Olympic Games, Sport and Science Teamed Up</i></summary>
+  <p>Julien Guyon is invited to discuss with Rémi Carmignani, Brigitte Vinçon-Leite and Arthur Guillot-Le Goff how scientific innovations contribute to the development of athletic performance, to the creation of a better and fairer sporting environment, and to the creation of sustainable infrastructures for competitions. Watch the video <a href="https://www.youtube.com/watch?v=mEN5inPxwok&amp;list=PLFIuidaxkf2wkSgZ_dtPNx8aIpMvyLjak&amp;index=12" target="_blank">here</a>.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Sunday, March 3, 2024,<br /> <i>Gabriel Stoltz co-organizes the program &quot;Materials Informatics&quot; at IMSI, Chicago</i></summary>
+  <p>The <a href="https://www.imsi.institute/about/" target="_blank">Institute for Mathematical and Statistical Innovation</a> (IMSI), located on the campus of the University of Chicago, hosts a program on <a href="https://www.imsi.institute/activities/data-driven-materials-informatics/" target="_blank">“Data-Driven Materials Informatics”</a> from March 4th to May 24th. Materials informatics is an emerging field defined by the use of simulation tools combined with methods from data sciences and machine learning to better understand materials properties and design innovative materials. The program will feature a tutorial week, 4 workshops and various other scientific activities, on the use and development of machine learning methods to study materials, understood in a broad sense, at all physical scales - models of quantum physics, molecular dynamics and continuum mechanics. The aim of this program is to bring together a diverse scientific audience, both in terms of scientific fields (physical sciences, materials sciences, biophysics, etc) and within mathematics (mathematical modeling, numerical analysis, statistics and data analysis, etc), to make progress on key questions of materials informatics.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Friday, February 23, 2024,<br /> <i>Nerea Vadillo has been awarded the 2024 prize by the Energy Finance Italia (EFI) association.</i></summary>
+  <p>This prize, aimed at under-30s, is awarded for the best paper presented at the EFI9 conference held in Bari from 12 to 14 February. The prize-winning work concerns the joint modelling of temperature and the price of electricity, in order to better understand and manage the risk associated with climate insurance products. It stems from a CIFRE thesis with AXA Climate supervised by Aurélien Alfonsi.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Thursday, January 18, 2024,<br /> <i>Gaspard Kemlin was awarded the PhD prize from École des Ponts</i></summary>
+  <p><a href="https://gaspardkemlin.frama.io/">Gaspard Kemlin</a> was a PhD student at CERMICS from September 2019 to November 2022, and defended his PhD in December 2022. He worked on Numerical analysis for Kohn-Sham Density Functional Theory. He now is an associate professor at <a href="https://www.u-picardie.fr/"> Picardie Jules Verne University.</a></p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Monday, January 8, 2024,<br /> <i>Arrival of Loucas Pillaud-Vivien at CERMICS</i></summary>
+  <p>Loucas Pillaud-Vivien joined the Applied Probability team at CERMICS on January the 2nd 2024. His research focuses on understanding the high-dimensional stochastic dynamics underlying the optimization procedures inherent to modern machine learning algorithms. He obtained his PhD at ENS/Inria Paris in 2020 under the supervision of Francis Bach and did his postdoctoral work at EPFL with Nicolas Flammarion, and then as a Courant Instructor (NYU) and Flatiron Fellow (Simons Foundation) in New-York. For more information, visit his <a href="https://loucaspillaudvivien.io/" target="_blank">webpage</a>.</p>
+
+  <p><img class="aligncenter size-medium wp-image-4589" src="https://cermics-lab.enpc.fr/wp-content/uploads/2024/01/Reduced_Pillaud-Vivien_Loucas-scaled_flatiron-300x200.jpg" alt="Reduced_Pillaud-Vivien_Loucas-scaled_flatiron" width="300" height="200" /></p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Monday, December 18, 2023,<br /> <i>Julien Guyon live on French TV to comment on football draws probabilities</i></summary>
+  <p>On December 18, 2023, <a href="https://cermics.enpc.fr/~guyon/" target="_blank">Julien Guyon</a> was live on the French TV network La chaîne L’Équipe. In what might well be a TV world premiere, he commented on <a href="https://www.youtube.com/watch?v=6frczKxeeSs" target="_blank">the draw probabilities of the UEFA Champions League</a>, <a href="https://www.youtube.com/watch?v=pArs8aVoRTk&amp;pp=ygUWbGVxdWlwZSB0aXJhZ2UgYXUgc29ydA%3D%3D" target="_blank">Europa League</a>, and Europa Conference League, and how they evolve during the draw. Due to the draw constraints and draw procedure, the probabilities are not easy to compute! The <a style="color: #005a95; text-decoration: none; cursor: pointer;" href="https://julienguyon.github.io/UEFA-draws/" target="_blank">live probability calculator</a> is joint work with <a href="https://cermics.enpc.fr/~meuniefr/" target="_blank">Frédéric Meunier</a> and second year École des Ponts students: <a href="https://fr.linkedin.com/in/flavien-audibert-10a581266" target="_blank">Flavien Audibert</a>, <a href="https://fr.linkedin.com/in/bilel-benaich-a6775224b" target="_blank">Bilel Benaich</a>, <a href="https://fr.linkedin.com/in/yohann-canavese-501396269" target="_blank">Yohann Canavese</a>, and <a href="https://www.linkedin.com/in/akram-lamssyah-582046252/" target="_blank">Akram Lamssyah</a>. The TDLOG course team (<a href="https://uk.linkedin.com/in/xavier-clerc-b0a4a495/en" target="_blank">Xavier Clerc</a> <a href="https://www.hollved.net/en/" target="_blank">Etienne Polack</a>) also contributed, as well as Edgar Duc and Antony Feord (via Ponts Etudes Projets).</p>
+
+  <p>Julien also explained how the probabilities are computed in <a href="https://www.lemonde.fr/sport/article/2023/12/18/un-psg-bayern-munich-en-huitiemes-de-finale-de-la-ligue-des-champions-probable-mais_6206430_3242.html" target="_blank">this article in Le Monde</a>, which even includes <a href="https://julienguyon.github.io/UEFA-draws/ExactProbabilities_ChampionsLeague_RoundOf16_text_website-1.pdf" target="_blank">a nerdy link</a> to a detailed mathematical explanation—a nice mix of probability theory and graph theory.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Thursday, November 16, 2023,<br /> <i>Virginie Ehrlacher receives the &quot;Young Female Scientist&quot; Irène Joliot-Curie Prize</i></summary>
+  <p><a href="https://team.inria.fr/matherials/team-members/virginie-ehrlacher-galland/" target="_blank">Virginie Ehrlacher</a> received the 2023 <a href="https://www.enseignementsup-recherche.gouv.fr/fr/prix-irene-joliot-curie-89451" target="_blank">Irène Joliot-Curie Prize</a> in the “Young Female Scientist” category. Created in 2001 by the French Ministry of Research, the Irène Joliot-Curie Prize is designed to promote the role of women in research and technology in France. It highlights the exemplary careers of women in science who combine excellence and dynamism. It is awarded by the French Ministry of Higher Education and Research, with the support of the Académie des Sciences and the Académie des Technologies. The “Young Female Scientist” prize is awarded to women who have defended their thesis within the last 10 years. It recognizes and encourages a young woman who has distinguished herself through her career and her work, making her a talented specialist in her field. See here for the <a href="https://www.academie-sciences.fr/en/Laureats/laureates-2023-du-prix-irene-joliot-curie-anne-canteaut-virginie-galland-ehrlacher-claire-de-march-laurette-piani-marilena-radoiu.html" target="_blank">2023 prize announcement</a>.</p>
+
+  <p>Virginie Ehrlacher works on the development and mathematical analysis of high-performance numerical methods for function approximation, in particular with applications in materials science. She has obtained important results on tensor methods and model reduction techniques. She is currently the leader of the ERC Starting Grant <a href="https://team.inria.fr/matherials/highleap-project/" target="_blank">HighLEAP</a> project on the simulation of high-dimensional particle and agent systems, making her an international reference on these subjects.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Monday, November 13, 2023,<br /> <i>KIRO</i></summary>
+  <p>The 7th edition of <a href="https://kiro.enpc.org/" target="_blank">KIRO</a> was organized at École des Ponts on Thursday 9th November. KIRO is a hackathon centering on techniques and applications of operations research. This unique event among the French Grandes Écoles is organized each year by the operation research group at CERMICS (Axel Parmentier and his PhD students) together with the <a href="https://clubinfo.enpc.org/" target="_blank">Club Informatique de l’École des Ponts</a>, the <a href="https://www.fondationdesponts.fr/" target="_blank">Fondation des Ponts</a>, and a company who proposes the problem to be solved. The 7th edition was sponsored by <a href="https://www.rte-france.com/" target="_blank">RTE</a> and focused on the design of a network of offshore windmills. Students from all over France participated. Laureates came from Université de Lorraine, Télécom Paris, Centrale Paris, ENS Saclay, and École des Ponts.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Monday, October 9, 2023,<br /> <i>Workshop on Smart Energy and Stochastic Optimization</i></summary>
+  <p>With the increase of renewables energies on one hand, and local production on the other, the landscape of energy is changing, requiring more and more to take uncertainty into account. That is why a new <a href="https://cermics-lab.enpc.fr/seso2023/" target="_blank">SESO workshop</a> is organized at CERMICS from October 9th to October 13th, with a mix of PhD students, researchers and industrial participants.</p>
+
+  <p>The workshop is composed of two parts:</p>
+  <ul>
+  <li>two one-day tutorials (the first on how to optimize an hybrid energy plant; the second on how to solve a stochastic program in Julia)</li>
+  <li>a three day scientific workshop</li>
+</ul>
+
+  <p>The SESO 2023 workshop is organized by <a href="http://cermics.enpc.fr/~delara/" target="_blank">Michel De Lara</a>, <a href="https://leclere.github.io/" target="_blank">Vincent Leclère</a> and <a href="https://frapac.github.io/pages/about/" target="_blank">François Pacaud</a>, and partially subsidized by <a href="https://www.e4c.ip-paris.fr/" target="_blank">E4C</a> and <a href="http://gdrro.lip6.fr/" target="_blank">GdR RO</a>.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Wednesday, October 4, 2023,<br /> <i>CERMICS and IMAGINE coordinate the new volume of the journal &quot;Transitions&quot;</i></summary>
+  <p>Tony Lelièvre (CERMICS) and David Picard (IMAGINE) have been invited to coordinate the third volume of the journal <a href="https://ecoledesponts.fr/publications-documentation?tab=transitions" target="_blank">“Transitions”</a> on “Models and data for the environment”. This volume includes many contributions from researchers working at <a href="https://cermics-lab.enpc.fr/2023/09/20/arrival-of-pierre-lissy-at-cermics/" target="_blank">CERMICS</a> and <a href="https://imagine-lab.enpc.fr/" target="_blank">IMAGINE</a>, and more generally from scientists and engineers who use numerical methods in their everyday life to nourish their research on the ecological transition. The articles will be presented and discussed on the 26th October (see the <a href="https://ecoledesponts.fr/lancement-de-la-3eme-edition-de-transitions-modeles-et-donnees-pour-lenvironnement" target="_blank">program</a> and the <a href="https://cermics-lab.enpc.fr/wp-content/uploads/2023/10/2023_transitions_flyer_ed2223.pdf" target="_blank">flyer)</a>, with in particular three round-tables with the authors on the three main subjects addressed in this volume: transport and mobility, climate, and energy.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Tuesday, September 26, 2023,<br /> <i>Fabian Glöckle co-author of CodeLlama, the new general audience AI of MetaAI</i></summary>
+  <p>Meta AI just released Code Llama, a large language model dedicated to coding. This software is based on Llama 2, and is one of the most performant open source options currently available. It is in particular a direct competitor to ChatGPT and Bing AI to generate new codes, and/or explain or comment lines of code.</p>
+
+  <p>Fabian Glöckle, PhD student at CERMICS, is one of the five main co-authors of the associated <a href="https://ai.meta.com/research/publications/code-llama-open-foundation-models-for-code/" target="_blank">research paper</a>. See the <a href="https://ai.meta.com/blog/code-llama-large-language-model-coding/" target="_blank">blog post</a> of Meta for further details.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Wednesday, September 20, 2023,<br /> <i>Arrival of Pierre Lissy at CERMICS</i></summary>
+  <p>Pierre Lissy joined the Modeling, Analysis and Simulation team at CERMICS on September 1st, 2023. His research focus is on control and stabilization of linear or nonlinear Partial Differential Equations, with a special emphasis on coupled systems. He obtained his PhD in 2013 at Sorbonne Université under the supervision of Jean-Michel Coron. From 2014 to 2023, He was associate professor at Université Paris-Dauphine, where he defended his “Habilitation à Diriger des Recherches” in 2021. For more information, visit <a href="https://cermics.enpc.fr/~lissyp/" target="_blank">his webpage</a>.</p>
+
+  <p><img class="aligncenter size-medium wp-image-4412" src="https://cermics-lab.enpc.fr/wp-content/uploads/2023/09/lissy-e1695228119836-300x278.jpg" alt="lissy" width="300" height="278" /></p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Tuesday, September 19, 2023,<br /> <i>Research school &quot;Sampling high dimensional probability measures&quot;</i></summary>
+  <p>Sampling high dimensional probability measures is a key issue in various scientific fields, including molecular dynamics and computational statistical physics (with applications in physics, chemistry, materials science and computational biology), as well as statistics (in particular Bayesian statistics) and more recently machine learning. In order to train a new generation of scientists to these questions, a <a href="https://sites.google.com/view/aleiac/anr-sineq/summer-school-mol-dyn-on-julia" target="_blank">summer school</a> is organized at CERMICS from Monday, September 25 to Friday, September 29. The training includes in particular various hands-on sessions, mostly in the programming language Julia. The event is organized by <a href="https://sites.google.com/view/aleiac/welcome/contact" target="_blank">Alessandra Iacobucci</a> (Univ. Paris Dauphine) and <a href="https://cermics-lab.enpc.fr/gabriel-stoltz/" target="_blank">Gabriel Stoltz</a> (CERMICS), in the framework of the ANR project <a href="https://sites.google.com/view/aleiac/anr-sineq" target="_blank">SINEQ</a>, and also benefits from funding from the <a href="https://erc-emc2.eu/" target="_blank">ERC Synergy EMC2</a>.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Thursday, September 14, 2023,<br /> <i>Julien Guyon is interviewed by Risk Magazine</i></summary>
+  <p><a href="https://cermics.enpc.fr/~guyon/" target="_blank">Julien Guyon</a> gave a one-hour interview to Risk magazine in August 2023. In this edition of Quantcast, Risk’s quantitative podcast, Julien discusses volatility modeling and option pricing as well as World Cup draws and formats. You can listen <a href="https://www.risk.net/cutting-edge/7957389/podcast-julien-guyon-on-volatility-modelling-and-world-cup-draws" target="_blank">here</a> to the podcast.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Friday, September 1, 2023,<br /> <i>Guillaume Dalle was awarded the 2023 AMIES PhD prize</i></summary>
+  <p>Sponsored by the scientific societies SFdS, SMAI and SMF, the <a href="https://www.agence-maths-entreprises.fr/public/pages/activities/prix2these.html" target="_blank">prix de thèse maths-entreprises</a> (maths-industry PhD prize) rewards each year researches in mathematics with a strong industrial impact. In 2023, it was awarded to <a href="https://gdalle.github.io/" target="_blank">Guillaume Dalle</a>, a former CERMICS PhD student. His PhD thesis, supervised by Yohann De Castro and Axel Parmentier, was carried out in partnership with the French railway company SNCF. It combined machine learning and operations research to make railway planning more resilient to hazards. Guillaume Dalle currently holds a postdoctoral position at the École Polytechnique Fédérale de Lausanne (Switzerland), and he plans to continue his academic career at the interface between applied mathematics and ecological transition.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Friday, August 18, 2023,<br /> <i>Urbain Vaes was awarded an ANR JCJC project</i></summary>
+  <p>The ANR project IPSO (Interacting Particle systems for Sampling and Optimization) was awarded  to <a href="https://urbain.vaes.uk/research/" target="_blank">Urbain Vaes</a>. The project will last two years starting 1st October 2023.</p>
+
+  <p>Many scientific applications require the calculation of expectations with respect to high-dimensional probability distributions. A widely-used approach to this end, known as the Markov chain Monte Carlo (MCMC) method, is to simulate a long trajectory of a stochastic dynamics that admits the target distribution as unique invariant measure, and to approximate expectations by time averages over this trajectory. Although the original MCMC method dates back to the 1950s, the development and analysis of sampling methods remains at present an extremely active area of mathematical research, driven by the ever-increasing amount of data available to scientists, a desire to understand high-dimensional problems, and changes in computer architecture.</p>
+
+  <p>Many key recent developments in the field are based on the use of interacting particle systems and their analysis at the level of the nonlocal Fokker-Planck equation describing the systems in the limit of infinitely many particles, known as the mean field limit. This approach to numerical algorithms based on interacting particle systems emerged initially from the optimization community and has since then brought considerable insight. It has enabled, notably, significant progress towards proving rigorously the longtime convergence of widely-used interacting particle methods, including the ensemble Kalman filter and particle swarm optimization.</p>
+
+  <p>Improving, implementing and mathematically analysing sampling and optimisation methods based on interacting particle systems are the primary aims of this project. The work we propose to undertake pertains to two particular classes of methods: consensus-based methods inspired by particle swarm optimisation, and ensemble Kalman-based methods, which were recently revealed to have a close connection to interacting Langevin diffusions. These methods have proven to be successful in variety of applications, including posterior sampling and maximum a posteriori estimation in the context of Bayesian inverse problems, as well as the training of large neural networks.</p>
+
+  <p>The planned research outlined in this project aims at laying the theoretical foundations of the emerging field of sampling and optimization using interacting particles and, when combined with modern computer architectures for parallel computing, has the potential to significantly impact applications.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Friday, July 28, 2023,<br /> <i>The Starting Grant ERC project HighLEAP (High-dimensional mathematical methods for LargE Agent and Particle systems) was awarded to Virginie Ehrlacher</i></summary>
+  <p>The Starting Grant ERC project <a href="https://team.inria.fr/matherials/highleap-project/" target="_blank">HighLEAP</a> (High-dimensional mathematical methods for LargE Agent and Particle systems) was awarded to Virginie Ehrlacher. The project will last five years from 1st December 2023.</p>
+
+  <p>Interacting particle or agent-based systems are ubiquitous in science. They arise in an extremely wide variety of applications including materials science, biology, economics and social sciences. Several mathematical models exist to account for the evolution of such systems at different scales, among which stand optimal transport problems, Fokker-Planck equations, mean-field games systems or stochastic differential equations. However, all of them suffer from severe limitations when it comes to the simulation of high-dimensional problems, the high-dimensionality character coming either from the large number of particles or agents in the system, the high amount of features of each agent or particle, or the huge quantity of parameters entering the model.</p>
+
+  <p>The objective of this project is to provide a new mathematical framework for the development and analysis of efficient and accurate numerical methods for the simulation of high-dimensional particle or agent systems, stemming from applications in materials science and stochastic game theory. The main challenges which will be addressed in this project are:</p>
+
+  <ul>
+  <li>
+    <p>sparse optimization problems for multi-marginal optimal transport problems, using moment constraints;</p>
+  </li>
+  <li>
+    <p>numerical resolution of high-dimensional partial differential equations, with randomized iterative algorithms;</p>
+  </li>
+  <li>
+    <p>efficient approximation of parametric stochastic differential equations, by means of reduced-order modeling approaches.</p>
+  </li>
+</ul>
+
+  <p>The potential impacts of the project are huge: making possible such extreme-scale simulations will enable to gain precious insights on the predictive power of agent- or particle-based models, with applications in various fields, such as quantum chemistry, molecular dynamics, crowd motion or urban traffic.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Monday, June 26, 2023,<br /> <i>14th international conference on Monte Carlo Methods and applications (MCM 2023)</i></summary>
+  <p>Benjamin Jourdain and Tony Lelièvre are two of the co-organizers of the 14th international conference on Monte Carlo Methods and applications (<a href="https://mcm2023.sciencesconf.org/">MCM 2023</a>), together with Stéphanie Allassonnière, Jean-François Chassagneux, Florence Forbes, Emmanuel Gobet and Gilles Pagès. This biennial event is one of the most prominent conference series devoted to research on the mathematical aspects of stochastic simulation and Monte Carlo methods. The 2023 session is organized on the Jussieu campus of Sorbonne Université, and gathers about 240 participants from 23 countries. In view of CO2 emissions compensation, some funding was devoted to the planting of trees in an area where biodiversity is threatened. The event is supported by various institutions and privately and publicly funded research programs, including École des Ponts, Labex Bézout, the financial risks chair, and Inria Paris.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Friday, June 23, 2023,<br /> <i>Hervé Andrès wins the Best Risk Management Paper Award at the International Congress of Actuaries</i></summary>
+  <p><a href="https://herveandres.github.io/" target="_blank">Hervé Andrès</a>, a PhD student at CERMICS, was awarded the Best Risk Management Paper prize at the International Congress of Actuaries, held in Sydney from May 28th to June 1st. His article “<a href="https://arxiv.org/pdf/2208.07251.pdf" target="_blank">Signature-based validation of real-world economic scenarios</a>” presents a novel approach for validating economic scenarios using advanced tools of non-parametric statistics and stochastic analysis.</p>
+
+  <p>A graduate of École des Ponts ParisTech, Hervé Andrès is pursuing his doctoral research under the supervision of Benjamin Jourdain, in collaboration with the actuarial consulting firm Milliman as part of a CIFRE agreement. His work focuses on modeling and validating real-world scenarios for applications in insurance.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Tuesday, June 13, 2023,<br /> <i>Jon-Shmuel Halfway to Twelfty conference</i></summary>
+  <p>The upcoming  <a href="https://cermics.enpc.fr/~meuniefr/Halfway-to-twelfty/Halfway-to-twelfty.html">Jon-Shmuel Halfway to Twelfty conference</a> will be held July 4-7 at École des Ponts et Chaussées to celebrate the 60th birthdays of Jon Lee and Shmuel Onn and will bring together a diverse group of researchers interested in continuous and integer optimization, computational and discrete geometry, theory and applications. Renown experts from leading institutions will gather at École des Ponts et Chaussées to present recent advances and exchange ideas. </p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Monday, March 20, 2023,<br /> <i>Claude Le Bris is appointed as a senior Zuse Fellow</i></summary>
+  <p><a href="http://cermics.enpc.fr/~lebris/" target="_blank">Claude Le Bris</a> has been appointed as a <a href="https://www.zib.de/home/institute/konrad_zuse_fellows" target="_blank">senior Zuse Fellow</a> at the <a href="https://www.zib.de/" target="_blank">Zuse Institute Berlin</a> (ZIB). The ZIB is an interdisciplinary research institute for applied mathematics and data-intensive high-performance computing. Its research focuses on modeling, simulation and optimization with scientific cooperation partners from academia and industry. Claude Le Bris would like to take the opportunity of this fellowship to also create new collaborations between CERMICS and mathematical departments in Berlin.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Thursday, March 9, 2023,<br /> <i>Julien Guyon starts a new chair &quot;Futures of Quantitative Finance&quot; with BNP Paribas and Université Paris Cité</i></summary>
+  <p><a href="https://cermics.enpc.fr/~guyon/" target="_blank">Julien Guyon</a> set up a new chair named <a href="https://ecoledesponts.fr/en/futures-quantitative-finance" target="_blank">“Futures of Quantitative Finance”</a> together with BNP Paribas and Université Paris Cité, for an initial period of three years (2023-2025). The successful kickoff event, which was very well attended, took place on March 8 at the BNP Paribas offices in Paris in the presence of Anthony Briant, director of École des Ponts ParisTech, Jérôme Lesueur, director for research, and Tony Lelièvre, director of CERMICS. The researchers involved at CERMICS include <a href="https://cermics.enpc.fr/~alfonsi/" target="_blank">Aurélien Alfonsi</a>, Julien Guyon (Principal Investigator), and <a href="https://cermics.enpc.fr/~jourdain/" target="_blank">Benjamin Jourdain</a>; the PI at UPC is Huyên Pham. By partnering with BNP Paribas and UPC on this new chair, École des Ponts ParisTech will strengthen its expertise in quantitative finance, building on a rich history of teaching and research in financial mathematics and risk modeling and management (dating back to the end of the 1980s). The chair will investigate several domains:</p>
+
+  <ul>
+  <li>Machine learning in finance (deep learning, reinforcement learning, generative models, etc.)</li>
+  <li>Volatility and dependence modeling, model calibration, and model risk</li>
+  <li>XVA analysis: models and computational methods</li>
+  <li>Numerical methods for high dimensional problems</li>
+</ul>
+
+  <p><img class="size-medium wp-image-4116 alignright" src="https://cermics-lab.enpc.fr/wp-content/uploads/2023/03/bnp1-e1678397324642-225x300.jpeg" alt="bnp1" width="225" height="300" /><img class="size-medium wp-image-4119 alignleft" src="https://cermics-lab.enpc.fr/wp-content/uploads/2023/03/bnp2-225x300.jpeg" alt="bnp2" width="225" height="300" /></p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Wednesday, February 8, 2023,<br /> <i>Bernard Lapeyre distinguished as he retires</i></summary>
+  <p>Bernard Lapeyre was distinguished as “<a href="https://amopa.asso.fr/lordre-des-palmes-academiques/" target="_blank">chevalier dans l’ordre des Palmes Académique</a>s”. He retired in December 2022.</p>
+
+  <p>Bernard Lapeyre has devoted most of his career to the development of applied mathematics at the École des Ponts. Since his arrival at the School in 1985 at CERMA (the very young laboratory of applied mathematics created 3 years earlier by Nicolas Bouleau), Bernard Lapeyre has been involved in the development of mathematics teaching, particularly financial mathematics. His course on financial models, proposed in 1987, was published in a book that had a strong international impact and was translated into many languages: <a href="https://www.taylorfrancis.com/books/mono/10.1201/9781420009941/introduction-stochastic-calculus-applied-finance-bernard-lapeyre-damien-lamberton" target="_blank">“Introduction to stochastic calculus applied to finance”</a>, co-authored with Damien Lamberton. After the merging of the two mathematics laboratories of the École in 1995, Bernard Lapeyre took over the direction of the newly created laboratory (CERMICS) in 1996, and contributed in a fundamental way to its development. With Renaud Keriven and Claude Le Bris, he structured the teaching of applied mathematics at École des Ponts by creating in 2000 the “Modeling, Programming, Simulation” curriculum, which remain today the three pillars of the <a href="https://ecoledesponts.fr/en/applied-mathematics-and-computer-science" target="_blank">teaching department “Applied mathematics and Computer Science”</a> of École des Ponts. Bernard Lapeyre has also actively developed the interactions between École des Ponts and former University of Marne-la-Vallée (now <a href="https://www.univ-gustave-eiffel.fr/en/" target="_blank">Université Gustave Eiffel</a>), notably through his involvement in the joint INRIA project teams Mathfi and <a href="https://team.inria.fr/mathrisk/" target="_blank">Mathrisk</a>. He has been very actively involved in doctoral training, directing the doctoral studies department at École des Ponts and then at Université Paris Est until 2014. More recently, Bernard Lapeyre co-directed the <a href="http://labex-bezout.fr/" target="_blank">Laboratoire d’Excellence Bezout</a>, which federates mathematics laboratories in eastern Paris.</p>
+
+  <p>As Bernard Lapeyre retires, we can see the importance of the legacy of his constant commitment to the School, both in teaching, in the development of doctoral studies, and in academic research and partnerships.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Thursday, January 26, 2023,<br /> <i>Renewal of the chair &quot;Risques Financiers&quot; with the Fondation du Risque</i></summary>
+  <p>The chair “Risques Financiers” of the Fondation du Risque has been renewed for the period 2023-2027. The researchers involved at CERMICS are <a href="http://cermics.enpc.fr/~jourdain/" target="_blank">Benjamin Jourdain</a> (Principal Investigator) and <a href="http://cermics.enpc.fr/~alfonsi/" target="_blank">Aurélien Alfonsi</a>. The chair is headed by Nicole El Karoui and jointly conducted with Sorbonne Université (PI: Gilles Pagès) and École Polytechnique (PI: Nizar Touzi). Since its creation in 2007, this chair fosters collaborations between Société Générale, École Polytechnique and École des Ponts ParisTech. Sorbonne University has joined in 2012. The research program for the next five years is focused on the investigation of decision models for interacting risks (modelling of the dependence between several assets, rough volatility models, systemic risk and interactions between financial institutions).</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Friday, December 9, 2022,<br /> <i>Léo Baty wins the EURO-NeurIPS challenge</i></summary>
+  <p>With his teammates from the Technishe Universität München, Leo Baty won the competition organized jointly by NeurIPS (one of the 3 most selective machine learning conferences) and EURO (the European Society for Operations Research) on a <a href="https://euro-neurips-vrp-2022.challenges.ortec.com/" target="_blank">dynamic vehicle routing problem</a>. 54 teams of researchers from all over the world participated in this competition. Léo Baty is an alumni from École des Ponts who is doing his thesis at Cermics, as part of the Air France chair, under the direction of Axel Parmentier.</p>
+
+  <p>The challenge was to produce an algorithm for the following routing problem. An express delivery company wants to minimize the distance driven by its vehicules. The requets arrive in real time. Every hour, the company decides which request to dispatch and builds the routes for the delivery vehicles. Requests must be delivered on time. A dilemma arises: should we wait for more request in the same area, or should we dispatch the request immediately to avoid having to make a last-minute delivery with an almost empty vehicle? This kind of dynamic and combinatorial problem is currently poorly solved. Building efficient algorithms can reduce the ecological and economical impacts of logistics systems. Leo Baty proposed an innovative algorithm based on techniques developed by the Cermics optimization team to combine machine learning and combinatorial optimization tools (see the <a href="https://arxiv.org/abs/2207.13513" target="_blank">associated preprint</a> for more information: G. Dalle, L. Baty, L. Bouvier, &amp; A. Parmentier, Learning with combinatorial optimization layers: A probabilistic approach, arXiv preprint 2207.13513).</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Friday, December 2, 2022,<br /> <i>Amaury Hayat and Nathan Lichtlé designed control algorithms for the world&#039;s largest collaborative autonomous vehicle experiment</i></summary>
+  <p>Between November 14 and 18, two CERMICS researchers participated in the world’s largest collaborative autonomous vehicle experiment on the highway during rush hour. A hundred connected autonomous vehicles were deployed on the highway between 6am and 10am with control algorithms aiming to reduce traffic jams and in particular stop-and-go waves.</p>
+
+  <p>The goal is to reduce fuel consumption and CO2 emissions of the whole traffic by acting only on a small proportion of connected vehicles. The vehicles were looped on a 6km stretch of I-24 south of Nashville, Tennessee.</p>
+
+  <p>This is the culmination of a three-year project led by the <a href="https://circles-consortium.github.io/">CIRCLES consortium</a>, which includes <a href="http://cermics.enpc.fr/~hayata/" target="_blank">Amaury Hayat</a>, a researcher at CERMICS, and <a href="https://www.nathanlct.com/about" target="_blank">Nathan Lichtlé</a>, a PhD student at CERMICS and ITS Berkeley. Amaury Hayat and Nathan Lichtlé co-designed the control algorithms used in this experiment. These algorithms use either classical mathematical techniques or AI models obtained by reinforcement learning.</p>
+
+  <p>See also the <a href="https://ecoledesponts.fr/cermics-quand-lintelligence-artificielle-regule-le-trafic-autoroutier-une-experience-tres-grande" target="_blank">press release from École des Ponts</a> and <a href="https://www.francetvinfo.fr/replay-radio/nouveau-monde/100-voitures-autonomes-sur-autoroute-c-est-le-plus-grand-test-au-monde_5474229.html" target="_blank">this article from France Info</a>.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Thursday, November 24, 2022,<br /> <i>Dylan Dronnier was awarded a 2021 Paris-Est Sup PhD prize</i></summary>
+  <p>Dylan Dronnier received on November 16th 2022 the <a href="https://www.paris-est-sup.fr/evenements/evenement/a1cae1856449282f59e2621fabc21372/?tx_news_pi1%5Bnews%5D=2082&amp;tx_news_pi1%5Bcontroller%5D=News&amp;tx_news_pi1%5Baction%5D=detail&amp;tx_news_pi1%5Bday%5D=16&amp;tx_news_pi1%5Bmonth%5D=11&amp;tx_news_pi1%5Byear%5D=2022" target="_blank">Prix spécial « Territoire » de la Communauté d’agglomération Paris-Vallée</a> de la Marne for his PhD thesis on <a href="https://theses.fr/2021ENPC0025" target="_blank">“Epidemics models in infinite-dimension and optimal vaccination strategies”</a>. Dylan Dronnier is a former student of École des Ponts, and completed his PhD under the co-supervision of Jean-François Delmas (CERMICS) and Pierre-André Zitt (LAMA).</p>
+
+  <iframe title="YouTube video player" src="https://www.youtube.com/embed/krHs_vOU2nQ" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Wednesday, November 9, 2022,<br /> <i>Julien Guyon makes headlines by shedding light on the draw probabilities of the UEFA Champions League</i></summary>
+  <p>In November 2022, Julien Guyon published <a href="https://www.lemonde.fr/sport/article/2022/11/07/ligue-des-champions-le-bayern-munich-adversaire-le-plus-probable-du-psg-en-huitiemes-de-finale_6148779_3242.html" target="_blank">an article</a> in Le Monde and was <a href="https://www.lequipe.fr/Football/Article/Le-bayern-munich-adversaire-le-plus-probable-pour-le-psg-en-8e-de-ligue-des-champions/1362704" target="_blank">interviewed</a> in L’Equipe. He explained how to compute the
+draw probabilities of the round of 16 of the UEFA Champions League, a neat math
+problem which passionates football fans and is not as easy to solve as it looks!
+His calculations were also presented in the popular French TV program <a href="https://live.lequipe.fr/replay/l-equipe-du-soir-du-2-novembre-2eme-partie/20163672" target="_blank">L’Equipe du Soir</a>.</p>
+
+  <p>Julien Guyon has extensively published articles on fairness in sports in top-tier journals, including The New York Times, Le Monde, The Times, El País, as well as in academic journals; a list is available on his <a href="https://cermics.enpc.fr/~guyon/" target="_blank">web page</a>. Topics have included:</p>
+
+  <ul>
+  <li>
+    <p><a href="http://ssrn.com/abstract=2424376" target="_blank">proposition of fairer draw procedures for the FIFA World Cup</a>, one of which was adopted by FIFA in 2018. Here are links to the <a href="https://www.degruyter.com/view/j/jqas.2015.11.issue-3/jqas-2014-0030/jqas-2014-0030.xml" target="_blank">published version</a>, a <a href="http://www.nytimes.com/2014/06/05/upshot/the-world-cup-draw-is-unfair-heres-a-better-way.html" target="_blank">New York Times article</a> and a <a href="http://www.nytimes.com/interactive/2014/06/03/upshot/world-cup-draw-simulation.html" target="_blank">draw simulator</a>. The whole story was summarized in <a href="https://theconversation.com/pourquoi-la-coupe-du-monde-est-plus-equitable-cette-annee-97948" target="_blank">The Conversation</a>. <a href="https://content.iospress.com/articles/journal-of-sports-analytics/jsa219" target="_blank">a fairer knockout bracket for the UEFA Euro</a>, also adopted by UEFA in 2020</p>
+  </li>
+  <li>
+    <p><a href="https://content.iospress.com/articles/journal-of-sports-analytics/jsa200414" target="_blank">risk of collusion for the 2026 FIFA World Cup</a> (48 teams, 16 groups of 3) and proposition of fairer formats</p>
+  </li>
+  <li>
+    <p><a href="https://content.iospress.com/articles/journal-of-sports-analytics/jsa200527" target="_blank">proposition of a new format “Choose Your Opponent”</a>&lt;/div&gt;</p>
+  </li>
+  <li>
+    <p>calculation of draw probabilities for the FIFA World Cup</p>
+  </li>
+</ul>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Tuesday, November 1, 2022,<br /> <i>Claude Le Bris is a MATH+ Distinguished Visiting Scholar at FU Berlin</i></summary>
+  <p><a href="https://cermics.enpc.fr/~lebris/" target="_blank">Claude Le Bris</a> will be a <a href="https://mathplus.de/research-2/visiting-scholars/" target="_blank" rel="noopener">MATH+ Distinguished Visiting Scholar</a> for the academic year 2022/2023. He will be hosted by <a href="https://www.mi.fu-berlin.de/en/math/groups/ag-numerik/members/Kornhuber/kornhuber.html">Ralf Kornhuber</a> of Freie Universität Berlin. The title “Distinguished Visiting Scholar” is given by the Berlin Mathematics Research Center to outstanding scientists and scholars from around the world with high international visibility. Read more <a href="https://mathplus.de/news/mathplus-distinguished-visiting-scholar-claude-le-bris/" target="_blank">here</a>.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Tuesday, September 27, 2022,<br /> <i>Arrival of Julien Guyon at CERMICS</i></summary>
+  <p>Julien Guyon joined the Applied Probability team at CERMICS on September 1, 2022, after working as a quantitative researcher in the financial industry for 16 years at Societe Generale (Paris, 2006-2012) and Bloomberg L.P. (New York, 2012-2022). Julien was also an adjunct professor in the Department of Mathematics at Columbia University and at the Courant Institute of Mathematical Sciences, NYU, from 2015 to 2022; and previously at Universite Paris Diderot and École des Ponts ParisTech. Julien serves as an Associate Editor for Finance &amp; Stochastics, SIAM Journal on Financial Mathematics, and Journal of Dynamics and Games, as well as a Managing Editor for Quantitative Finance. He is also a Louis Bachelier Fellow. His main research interests include nonlinear option pricing, volatility and correlation modeling and calibration, (nonlinear) optimal transport, and numerical probability.</p>
+
+  <p>A big soccer fan, Julien has also developed a strong interest in sports analytics, and has published several articles on FIFA and UEFA competitions both in academic journals and in top-tier newspapers (The New York Times, The Times, Le Monde, El Pais, etc.) including a new, fairer draw method for the FIFA World Cup. Some of his suggestions for draws and competition formats have already been adopted by FIFA and UEFA.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Friday, June 10, 2022,<br /> <i>Regis Santet was awarded the 2022 Pasquet Prize</i></summary>
+  <p><a href="https://www.fondationdesponts.fr/">Fondation des Ponts</a> awards the Pasquet prize to the “best” student who has graduated from an engineering program. It was awarded in 2022 to Régis Santet. See <a href="https://twitter.com/Fondation_Ponts/status/1535269426576113678" target="_blank">here</a> for further elements. <a href="https://rsantet.github.io/" target="_blank">Régis Santet</a> is currently preparing his thesis in the Modeling, Analysis and Simulation team, on the development of efficient numerical methods for molecular dynamics.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Thursday, March 3, 2022,<br /> <i>CERMICS supports the Mathematics Subscribe-to-Open programme</i></summary>
+  <p>CERMICS supports the <a href="https://www.edpsciences.org/en/maths-s2o-programme" target="_blank">mathematics Subscribe-to-Open programme</a> led by EDP Sciences and the French Société de Mathématiques Industrielles et Appliquées (SMAI). See the <a href="https://www.edpsciences.org/en/maths-s2o-programme#sponsors" target="_blank">full list of</a> <a href="https://www.edpsciences.org/en/maths-s2o-programme#sponsors" target="_blank">sponsors</a>.</p>
+
+  <p><img class="wp-image-3564 aligncenter" src="https://cermics-lab.enpc.fr/wp-content/uploads/2022/03/S20-Flash-Feb22-EquitableOA-COL-RGB-300x300.png" alt="S20-Flash-Feb22-EquitableOA-COL-RGB" width="244" height="244" /></p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Friday, February 25, 2022,<br /> <i>Axel Parmentier was awarded the 2022 Robert Faure Prize</i></summary>
+  <p>Axel Parmentier won the first prize in the <a href="https://www.roadef.org/roadef-prix-robert-faure">Robert Faure</a> Prize, awarded every three years to a researcher under 35 years old. Created in honor of Professor Robert Faure, a pioneer of Operations Research in France, the Robert Faure Prize aims to encourage an original contribution in the field of Operations Research and Decision Support.</p>
+
+  <p>Particular attention is given to work that combines the development of theoretical methods with applications, in the spirit of Robert Faure’s work.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Thursday, February 3, 2022,<br /> <i>E. Cancès was co-awarded a Simons Foundation&#039;s Target Grant on moiré materials</i></summary>
+  <p>The physics of moiré materials has developed exponentially in the last few years, following in particular the experimental discovery by P. Jarillo-Herrero (MIT) et al. in 2018 of superconducting states in twisted bilayer graphene (TBG). The topic of Moiré materials gives
+rise to new research directions at the interface between physics and mathematics. The project funded by the Simons Foundation brings together an interdisciplinary team including mathematicians (Eric Cancès, École des Ponts ; Svetlana Jitomirskaya, UC Irvine ; Lin Lin, UC Berkeley ; Mitchell Luskin, University of Minnesota ; Maciej Zworski, UC Berkeley) and physicists (Efthimios Kaxiras, Harvard ; Allan MacDonald, UT Austin ; Angel Rubio, MPI Hamburg and Flatiron Institute).</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Friday, January 28, 2022,<br /> <i>Guillaume Dalle was awarded the 2021 Pasquet Prize</i></summary>
+  <p><a href="https://www.fondationdesponts.fr/">Fondation des Ponts</a> awards the <a href="https://www.fondationdesponts.fr/prix-pasquet-guillaume-dalle/">Pasquet</a> prize to the “best” student who has graduated from an engineering program. Guillaume DALLE (IPEF engineer) is preparing his thesis in the Optimization team on prediction and planning problems in the railway system, with approaches that combine machine learning and operations research. He was congratulated for his thoroughness, his maturity, his excellence and his investment in teaching and in collective actions.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Tuesday, January 11, 2022,<br /> <i>Louis Bouvier was co-awarded the 2021 ROADEF Master&#039;s Thesis</i></summary>
+  <p>The <a href="https://www.roadef.org/">ROADEF</a> RO/AD Master’s Thesis Prize aims to highlight the research of Master’s students devoted to Operational Research and Decision Analysis.</p>
+
+  <p>Louis Bouvier, a student in the Master 2 <a href="https://www.master-mva.com/">MVA</a> program at <a href="https://ens-paris-saclay.fr/">ENS Paris-Saclay</a> and <a href="https://www.ecoledesponts.fr">École des Ponts ParisTech</a>, was awarded a prize for his dissertation entitled ‘Large Neighborhood Search and Structured Prediction for the Inventory Routing Problem’.</p>
+
+  <p>The jury was impressed by the quality of the work presented and particularly appreciated the scientific content of the work, the ability to present it with pedagogy and the degree of hindsight that appeared in the answers to questions.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Saturday, January 1, 2022,<br /> <i>Gabriel Stoltz was awarded an ANR project</i></summary>
+  <p>The ANR project <a href="https://sites.google.com/view/aleiac/anr-sineq" target="_blank">SINEQ</a> was awarded to Gabriel Stoltz. The aim of this project is to provide new tools for the mathematical and numerical analysis of nonequilibrium stochastic dynamics. The techniques employed lie at the interface of various subfields of mathematics, ranging from probability theory and the study of stochastic processes to functional analysis and the theory of partial differential equations; with an emphasis on the numerical analysis of Monte Carlo methods and time discretization of stochastic differential equations. The project is a collaborative effort involving Benjamin Jourdain and Tony Lelièvre at CERMICS, as well as researchers from <a class="XqQF9c" href="https://www.ceremade.dauphine.fr/" target="_blank">CEREMADE</a> (Université Paris Dauphine) and the <a href="https://team.inria.fr/simsmart/" target="_blank">SIMSART</a> team of Inria Rennes. <a class="XqQF9c" href="http://people.irisa.fr/Mathias.Rousset/" target="_blank">Mathias.Rousset</a></p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Friday, November 19, 2021,<br /> <i>Renewal of the chair with Air France</i></summary>
+  <p>The <a href="https://chaireairfrance.enpc.fr/" target="_blank">“Operational Research and Machine Learning” chair</a> between Air France and École des Ponts has been renewed for 5 years, and renamed “Artificial Intelligence for Air Transport”. It will fund research projects on the interactions of Machine Learning and Operations Research, as well as their applications to predictive maintenance, revenue management, and airline operations optimization.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Tuesday, October 12, 2021,<br /> <i>Urbain Vaes joined the project-team MATHERIALS</i></summary>
+  <p><a href="https://urbain.vaes.uk/research/" target="_blank">Urbain Vaes</a> joined the Inria project-team <a href="https://team.inria.fr/matherials/" target="_blank">MATHERIALS </a>on October 1st, 2021. His research focus is on the development and analysis of sampling methods in high dimensions, in particular for applications related to Bayesian inverse problems and molecular dynamics. He obtained his PhD in 2019 under the supervision of <a href="http://wwwf.imperial.ac.uk/~pavl/" target="_blank">Grigorios Pavliotis</a> and <a href="https://www.imperial.ac.uk/people/s.kalliadasis" target="_blank">Serafim Kalliadasis</a>. After that, he was a postdoctoral research associate in the group of <a href="http://www.imperial.ac.uk/applied-numerical-analysis" target="_blank"> Applied and Numerical Analysis</a> at <a href="http://www.imperial.ac.uk/" target="_blank">Imperial College London</a> and then at MATHERIALS for one year.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Tuesday, May 4, 2021,<br /> <i>Amaury Hayat was awarded the 2021 FORBES 30 Under 30</i></summary>
+  <p>Forbes 30 Under 30 is a set of lists of people under 30 years old issued annually by Forbes magazine and some of its regional editions. The American lists recognize 600 business and industry figures, with 30 selected in twenty industries each. Asia and <a title="Europe" href="https://www.forbes.com/sites/alexandrawilson1/2021/04/07/by-the-numbers-meet-the-30-under-30-europe-class-of-2021/?sh=7561899119a3">Europe</a> also each have ten categories for a total of 300 each, while Africa has a single list of 30 people. You can read <a href="https://www.polytechnique.edu/fr/content/un-mathematicien-forme-lx-dans-la-liste-2021-forbes-30-under-30" target="_blank">here</a> an interview by Amaury Hayat on this topic.</p>
+
+  <p> </p>
+
+  <p> </p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Tuesday, April 13, 2021,<br /> <i>Grégoire Ferré was awarded the PhD prize from École des Ponts</i></summary>
+  <p><a href="https://sites.google.com/view/gferre/accueil" target="_blank">Grégoire Ferré</a> was a PhD student at CERMICS from October 2016 to September 2019, and defended his PhD in November 2019. He worked on large deviation theory and its application in statistical physics, both from theoretical and numerical viewpoints. He now is a research associate at <a class="XqQF9c" href="https://www.cfm.fr/who-we-are/" target="_blank">Capital Fund Management.</a></p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Tuesday, December 15, 2020,<br /> <i>Amaury Hayat was awarded the 2020 Prize of chancellerie des universités de Paris</i></summary>
+  <p><a href="http://cermics.enpc.fr/~hayata/" target="_blank">Amaury Hayat</a>, permanent researcher at CERMICS, received the 2020 <a href="https://www.sorbonne.fr/la-chancellerie-des-universites-de-paris/v2la-chancellerie-des-universites-de-paris-recompense-lexcellence-universitaire-et-propose-des-prix/les-prix-universitaires/" target="_blank">Prize of chancellerie des universités de Paris</a>, category “sciences”. These prizes reward the academic and scientific quality of PhD theses defended during the previous twelve-month period, in the fields of law and political sciences, economics and management, medicine, sciences, pharmacy, arts and humanities. There were 9 prizes in sciences for 2020. Amaury Hayat was distinguished for his work on the stabilization of partial differential equations modeling of hyperbolic type, such as trafic flow equations or the Saint Venant equation for shallow water flows. He did his PhD at Sorbonne Université, in collaboration with the Saint-Venant laboratory of École des Ponts.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Wednesday, November 11, 2020,<br /> <i>Grégoire Ferré was awarded the PhD prize from the doctoral school MSTIC of University Paris East</i></summary>
+  <p><a href="https://sites.google.com/view/gferre/accueil" target="_blank">Grégoire Ferré</a> was a PhD student at CERMICS from October 2016 to September 2019, and defended his PhD in November 2019. He worked on large deviation theory and its application in statistical physics, both from theoretical and numerical viewpoints. He now is a research associate at <a class="XqQF9c" href="https://www.cfm.fr/who-we-are/" target="_blank">Capital Fund Management.</a></p>
+
+  <iframe title="YouTube video player" src="https://www.youtube.com/embed/pOG6pyK2bt4" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+
+  <p> </p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Thursday, October 8, 2020,<br /> <i>Nicolas Pignet was awarded the Paul Caseau PhD prize in numerical simulation and is one of the three nominees of the AMIES PhD prize</i></summary>
+  <p>Nicolas Pignet was a PhD student at CERMICS from November 2016 to October 2019,
+supported by a CIFRE PhD Fellowship with EDF R&amp;D. He defended his PhD in
+October 2019 on hybrid high-order methods for nonlinear solid mechanics. Nicolas
+Pignet devised and analyzed new discretization schemes, and applied them to
+hyperelasticity, plasticity, and contact/friction problems. He implemented his
+work in the diskpp software at CERMICS and the industrial software code_aster at
+EDF. Nicolas Pignet is now Research Engineer at ERMES Department, EDF R&amp;D.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Wednesday, October 16, 2019,<br /> <i>Aurélien Alfonsi received the 2019 IEF award &quot;Best Young Researcher in Finance&quot;</i></summary>
+  <p>See <a href="https://www.institutlouisbachelier.org/en/group/institut-europlace-de-finance/" target="_blank">here</a> for more details.</p>
+
+</details>
+
+<hr />
+
+<details>
+  <summary> Tuesday, July 30, 2019,<br /> <i>Claude Le Bris is plenary speaker at ICIAM 2019</i></summary>
+  <p><a href="https://iciam2019.org/" target="_blank">ICIAM 2019</a> was held in Valencia (Spain). Claude Le Bris was an <a href="https://iciam2019.org/index.php/scientific-program/highlighted-speakers/invited-speakers" target="_blank">invited speaker</a>. Some additional elements on his talk can be read <a href="http://iciam2019valencia.over-blog.com/2019/07/claude-le-bris.html">here</a> [in French].</p>
+
+  <iframe title="YouTube video player" src="https://www.youtube.com/embed/YSOhkMednio" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+
+</details>
+
+<hr />
+
+
+
+      
+
+      
+
+    </div>
+  </div>
+</main>
+
+
+  <footer>
+  <div class="container-md beautiful-jekyll-footer">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+      
+<ul class="list-inline text-center footer-links"><li class="list-inline-item">
+    <a href="mailto:julien.guieu@enpc.fr" title="Email me">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Email me</span>
+   </a>
+  </li><li class="list-inline-item">
+    <a href="https://www.facebook.com/EcoledesPonts" title="Facebook">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Facebook</span>
+   </a>
+  </li><li class="list-inline-item">
+    <a href="https://www.instagram.com/ecoledesponts" title="Instagram">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Instagram</span>
+   </a>
+  </li><li class="list-inline-item">
+    <a href="https://www.youtube.com/user/EcoledesPonts" title="YouTube">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">YouTube</span>
+   </a>
+  </li></ul>
+
+
+      
+      <p class="copyright text-muted">
+      
+        cermics
+        &nbsp;&bull;&nbsp;
+      
+      2026
+      &nbsp;&bull;&nbsp;
+      <a href="/legal-notice/">legal-notice</a>
+      
+
+      
+
+      
+
+      </p>
+      <p class="theme-by text-muted">
+        Powered by
+        <a href="https://beautifuljekyll.com">Beautiful Jekyll</a>
+      </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  
+  
+    
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+
+
+  
+    
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+
+  
+    
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+  
+
+
+
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+      <script src="/assets/js/beautifuljekyll.js"></script>
+    
+  
+
+
+
+
+
+
+
+
+
+</body>
+</html>
