@@ -34,7 +34,12 @@ cover-img: /assets/images/coriolis-reunion.jpg
 {% if link.abstract %}<a href="{{ link.abstract }}">(abstract)</a>{% endif %}
 {% if link.TIb %}*{{ link.TIb }}*. {% endif %}{% if link.slidesb %}<a href="{{ link.slidesb  | relative_url}}">(slides), </a>{% endif %}
 {% if link.abstractb %}<a href="{{ link.abstractb }}">(abstract)</a>{% endif %}
+{% if link.contents %}
+<details markdown="1">
+<summary>Abstract</summary>
 {{ link.contents }}
+</details>
+{% endif %}
 {% endif %}
 {% endif %}
 

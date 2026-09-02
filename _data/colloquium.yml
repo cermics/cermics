@@ -3,7 +3,7 @@
    AU: Christian Lubich
    UN: Universität Tübingen
    TI: "Dynamical low-rank approximation and time integration of tree tensor networks"
-   abstract: "The talk first presents some numerical experiments with time-dependent tree
+   contents: "The talk first presents some numerical experiments with time-dependent tree
    tensor network algorithms for the approximation of quantum spin system
    dynamics. It continues with the basics in the design of time integration methods
    that are robust to the typical presence of small singular values, that have good
