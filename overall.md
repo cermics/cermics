@@ -25,6 +25,6 @@ cover-img: /assets/images/coriolis1.jpg
 
 The laboratory is composed of three teams
 
-  * [Applied Probability](../applied-probability) (person in charge: <a href="/staff#guyon">Julien Guyon</a>)
-  * [Modeling, Analysis and Simulation](../mas) (person in charge: <a href="/staff#ehrlacher">Virginie Ehrlacher</a>)
-  * [Optimization](../optimization) (person in charge: <a href="/staff#leclere">Vincent Leclère)
+  * [Applied Probability](../applied-probability) (person in charge: [Julien Guyon](../staff#guyon)
+  * [Modeling, Analysis and Simulation](../mas) (person in charge: [Virginie Ehrlacher](../staff#ehrlacher)
+  * [Optimization](../optimization) (person in charge: [Vincent Leclère](../staff#leclere)
