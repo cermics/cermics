@@ -1,7 +1,0 @@
-#!/bin/sh
-mogrify -path ../images-cermics-cropped  \
-        -resize 300x300^ \
-        -gravity Center  \
-        -extent 300x300  \
-        ./*.jpg
-
