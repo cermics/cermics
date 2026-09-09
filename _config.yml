@@ -37,7 +37,7 @@ navbar-links:
   News: "news"
   Seminars:
     - Colloquium: "https://cermics.github.io/colloquium"
-    - Applied Mathematics: "applied-mathematics"
+    - Applied Mathematics: "https://cermics.github.io/applied-mathematics"
     - Young Researchers: "young-researchers"
     - Stochastic Methods and Finance: "https://cermics.gitlab.enpc.fr/alfonsi/GTMSF.html"
     - Data Transitions: "data-transitions"
