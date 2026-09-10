@@ -6,5 +6,5 @@ team: MAS
 position: Researcher 
 function: member
 mail:  david.gontier@enpc.fr
-homepage: "http://cermics.gitlab.enpc.fr/gontierd"
+homepage: "http://cermics.gitlab.enpc.fr/gontier"
 ---
