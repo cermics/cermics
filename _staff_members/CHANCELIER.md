@@ -8,7 +8,7 @@ function: member
 tel: (0)1 64 15 36 38
 place: Coriolis B209
 mail:  jean-philippe.chancelier@enpc.fr
-homepage: "http://cermics.enpc.fr/~jpc/"
+homepage: "http://jpc-cermics.github.io"
 where: cermics.enpc.fr
 keywords: "Stochastic optimization, Convex Analysis, Rocq, Nsp, Energy systems"
 ---
