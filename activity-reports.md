@@ -13,7 +13,7 @@ cover-img: /assets/images/coriolis.jpg
 <td></td>
 <td></td>
 <td></td>
-<td><a href="{{ '/assets/rars/CERMICS-2025.pdf' | relative_url }}">2022</a></td>
+<td><a href="{{ '/assets/rars/CERMICS-2025.pdf' | relative_url }}">2025</a></td>
 <td></td>
 </tr>
 <tr>
