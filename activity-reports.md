@@ -9,6 +9,14 @@ cover-img: /assets/images/coriolis.jpg
 <table id="reports">
 <tbody>
 <tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="{{ '/assets/rars/CERMICS-2025.pdf' | relative_url }}">2022</a></td>
+<td></td>
+</tr>
+<tr>
 <td><a href="{{ '/assets/rars/CERMICS-2024.pdf' | relative_url }}">2024</a></td>
 <td></td>
 <td><a href="{{ '/assets/rars/CERMICS-2023.pdf' | relative_url }}">2023</a></td>
