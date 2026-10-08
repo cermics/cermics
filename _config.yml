@@ -20,6 +20,7 @@ author: cermics
 ###############################################
 
 navbar-links:
+  News: "news"
   Organization:
     - Overall Organization: "overall"
     - Applied Probability: "applied-probability"
@@ -33,8 +34,7 @@ navbar-links:
     - Teaching: "teaching"
     - Activity reports: "activity-reports"
     - Evaluation reports: "evaluation-reports"
-  Cauchy Fellowship: "cauchy-fellowship"
-  News: "news"
+#  Cauchy Fellowship: "cauchy-fellowship"
   Seminars:
     - Colloquium: "https://cermics.github.io/colloquium"
     - Applied Mathematics: "https://cermics.github.io/applied-mathematics"
