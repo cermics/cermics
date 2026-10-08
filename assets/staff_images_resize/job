@@ -1,0 +1,8 @@
+#!/bin/sh
+mogrify -path ../missing.jpeg  \
+        -resize 96x96^ \
+        -gravity Center  \
+        -extent 96x96  \
+        ./*.jpg
+
+
