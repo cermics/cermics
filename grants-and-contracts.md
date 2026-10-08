@@ -12,7 +12,7 @@ grants and contracts:
  - <a href="https://erc-emc2.eu/" >ERC synergy grant EMC2</a> (2019-2026, Eric Cancès as one of the four PIs)
  - Horizon 2020 Cordis-EU project <a href="https://cordis.europa.eu/project/id/955701/results" >TIME-X</a> (Tony Lelièvre)
  - <a href="https://www.institutlouisbachelier.org/programme/risques-financiers/" >Financial Risks chair</a> (Applied probability)
- - <a href="https://chaireairfrance.enpc.fr/" >Air France chair</a> (Frédéric Meunier, Axel Parmentier)
+ - <a href="https://chaireairfrance.enpc.fr/" >Air France chair</a> (Pierre-Cyril Aubin, Axel Parmentier)
  - <a href="https://ecoledesponts.fr/en/futures-quantitative-finance">Futures of quantitative finance chair</a> (Julien Guyon, Huyên PHAM UPC)
  - Simons Target Grant on moiré materials (Eric Cancès)
  - <a href="https://sites.google.com/view/aleiac/anr-sineq" >ANR SINEQ</a> (2022-2025, Gabriel Stoltz)
