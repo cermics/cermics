@@ -1,6 +1,6 @@
 ---
 sur: DAVID
-image: missing.jpeg
+image: DAVID-96x96.jpg 
 name: Alexis
 team: OPTIM 
 position: PhD Student

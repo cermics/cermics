@@ -1,6 +1,6 @@
 ---
 sur: CANTINI
-image: missing.jpeg
+image: CANTINI-96x96.jpg
 name: Clotilde
 team: OPTIM
 position: Predoctoral fellow

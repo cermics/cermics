@@ -1,6 +1,6 @@
 ---
 sur: SOSSOU-EDOU
-image: missing.jpeg
+image: SOSSOU_EDOU-96x96.jpg
 name: Rose
 team: OPTIM
 position: PhD Student

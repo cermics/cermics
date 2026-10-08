@@ -1,6 +1,6 @@
 ---
 sur: LE MOËL
-image: missing.jpeg
+image: LE_MOEL-96x96.jpg 
 name: Damien
 team: PROBA
 position: PhD Student

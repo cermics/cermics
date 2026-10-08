@@ -1,6 +1,6 @@
 ---
 sur: LAPORTE
-image: missing.jpeg
+image: LAPORTE-96x96.jpg
 name: Michaël 
 team: PROBA
 position: PhD Student

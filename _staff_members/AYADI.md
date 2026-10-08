@@ -1,6 +1,6 @@
 ---
 sur: AYADI
-image: missing.jpeg
+image: AYADI-96x96.jpg
 name: Iman
 team: PROBA
 position: Postdoctoral fellow

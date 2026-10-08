@@ -1,5 +1,5 @@
 ---
-sur: SIDI_HIDA
+sur: SIDI HIDA
 image: missing.jpeg
 name: Bahaa
 team: MAS

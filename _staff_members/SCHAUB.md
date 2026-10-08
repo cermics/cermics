@@ -1,6 +1,6 @@
 ---
 sur: SCHAUB
-image: missing.jpeg
+image: SCHAUB-96x96.jpg
 name: Simeon
 team: OPTIM
 position: PhD Student
