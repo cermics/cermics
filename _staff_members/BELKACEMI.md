@@ -1,6 +1,6 @@
 ---
 sur: BELKACEMI
-image: BELKACEMI-96x96.jpg
+image: missing.jpeg
 name: Chérif
 team: PROBA
 position: Postdoctoral fellow

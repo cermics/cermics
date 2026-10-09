@@ -1,6 +1,6 @@
 ---
 sur: BOUCHAREB
-image: BOUCHAREB-96x96.jpg
+image: missing.jpeg
 name: Naoufal
 team: PROBA
 position: Postdoctoral fellow
