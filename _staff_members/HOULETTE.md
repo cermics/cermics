@@ -5,4 +5,5 @@ name: Maxime
 team: MAS
 position: PhD Student
 function: member
+mail: Maxime.HOULETTE@enpc.fr
 ---

@@ -5,4 +5,5 @@ name: Adrien
 team: OPTIM 
 position: Associated researcher
 function: member
+mail: adrien.le-franc@enpc.fr
 ---

@@ -5,4 +5,5 @@ name: Brice
 team: MAS
 position: Postdoctoral fellow
 function: member
+mail: brice.kammegne-tcheugam@enpc.fr
 ---

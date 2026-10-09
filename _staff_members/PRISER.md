@@ -5,4 +5,5 @@ name: Victor
 team: OPTIM 
 position: Postdoctoral fellow
 function: member
+mail: victor.priser@enpc.fr
 ---

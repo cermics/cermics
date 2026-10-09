@@ -5,4 +5,5 @@ name: Gilles
 team: OPTIM 
 position: PhD Student
 function: member
+mail: gilles.fevry@enpc.fr
 ---

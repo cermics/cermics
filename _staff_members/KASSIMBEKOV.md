@@ -5,4 +5,5 @@ name: Azamat
 team: MAS
 position: PhD Student
 function: member
+mail: azamat.kassimbekov@polytechnique.edu
 ---
