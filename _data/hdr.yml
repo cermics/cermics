@@ -147,3 +147,9 @@
   YP: 2024
   TI: "Some contributions at the crossroad of machine learning and combinatorial optimization"
   N1: Paris Est Sup
+- id: 2026Aubin
+  RE: void
+  AU: P.-C. Aubin
+  YP: 2026
+  TI: "Generalizing convexity for gradient flows and algorithms"
+  N1: IP Paris
