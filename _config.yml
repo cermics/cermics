@@ -72,7 +72,7 @@ round-avatar: true
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
   email: "julien.guieu@enpc.fr"
-  rss: false # remove this line if you don't want to show an RSS link at the bottom
+  rss: true # remove this line if you don't want to show an RSS link at the bottom
   facebook: EcoledesPonts
   instagram: ecoledesponts
   youtube: "user/EcoledesPonts"
@@ -106,8 +106,8 @@ social-network-links:
 #  yelp: yourname
 
 # If you want your website to generate an RSS feed, provide a description
-# The URL for the feed will be https://<your_website>/feed.xml
-rss-description: Cermics web site
+# The URL for the feed will be https://<your_website>/feed/news.xml
+rss-description: Cermics news
 
 ###########################
 # --- General options --- #
@@ -129,7 +129,7 @@ share-links-active:
 title-on-all-pages: true
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
-excerpt_length: 50
+excerpt_length: 200
 
 # Whether or not to show an excerpt for every blog post in the feed page
 feed_show_excerpt: true
@@ -321,14 +321,21 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-redirect-from
-
+  - jekyll-feed
+  
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
 
 #################################################################################
 # --- Added for cermics --- #
 #################################################################################
+
 collections:
-  - staff_members
-  - news
-  
+  news:
+      output: true
+  staff_members:
+      output: true
+
+feed:
+  collections:
+    - news

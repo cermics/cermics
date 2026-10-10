@@ -2,8 +2,14 @@
 
 source "https://rubygems.org"
 
-gem "jekyll-redirect-from"
+gem "jekyll"
 
+# Ajoutez le plugin ici :
+group :jekyll_plugins do
+  gem "jekyll-feed"
+end
+
+gem "jekyll-redirect-from"
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
