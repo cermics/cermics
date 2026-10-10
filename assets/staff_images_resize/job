@@ -1,5 +1,5 @@
 #!/bin/sh
-mogrify -path ../missing.jpeg  \
+mogrify -path pipo  \
         -resize 96x96^ \
         -gravity Center  \
         -extent 96x96  \
