@@ -1,6 +1,6 @@
 ---
 layout: page
-cover-img: /assets/images/coriolis.jpg
+cover-img: /assets/images-cermics/image12.jpg
 ---
 
 ### Cermics News
