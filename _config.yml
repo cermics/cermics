@@ -281,7 +281,7 @@ date_format: "%B %-d, %Y"
 #################################################################################
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Toronto"
+timezone: "Europe/Paris"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
@@ -300,6 +300,13 @@ defaults:
       layout: "post"
       comments: true  # add comments to all blog posts
       social-share: true # add social media sharing buttons to all blog posts
+  -
+    scope:
+      path: ""
+      type: "news" # every file in _news/
+    values:
+      layout: "post"
+      cover-img: /assets/images-cermics/image12.jpg
   -
     scope:
       path: "" # any file that's not a post will be a "page" layout by default
@@ -336,6 +343,8 @@ collections:
   staff_members:
       output: true
 
+# RSS feed of the news (/feed/news.xml). To keep a news item out of the feed,
+# put "draft: true" in its front matter (jekyll-feed ignores "feed: false").
 feed:
   collections:
     - news
