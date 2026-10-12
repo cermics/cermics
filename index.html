@@ -11,6 +11,17 @@ carousels:
     - image: /assets/images-cermics/image8.jpg
 ---
 
+<details markdown="1">
+<summary style="text-align: right;"><b>Latest News</b></summary>
+{% assign latest_news = site.news | where_exp: "item", "item.invisible != 'yes'" | reverse %}
+{% for item in latest_news limit: 5 %}
+<details markdown="1">
+<summary> {{ item.date | date : "%A, %B %-d, %Y" }}, <i>{{ item.title  }}</i></summary>
+  {{ item.content }}
+</details>
+{% endfor %}
+</details>
+
 <img src="{{ '/assets/images/logos_cermics.png' | relative_url }}"
      align="left" hspace="20" vspace="20" /> 
 <p style="text-align: justify;">    
@@ -55,6 +66,7 @@ the <a href="https://ingenius.ecoledesponts.fr/recherche/?s=CERMICS"
 target="_blank">contributions of CERMICS members to Ingenius</a>, the digital
 magazine of &Eacute;cole des Ponts.
 
+
 <h4>Permanent Researchers</h4>
 
 <br>
@@ -71,4 +83,6 @@ magazine of &Eacute;cole des Ponts.
 
 <br>
 {% include staff_youtube.html %}
+
+
 
