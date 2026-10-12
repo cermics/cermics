@@ -1,0 +1,30 @@
+{%- comment -%}
+Barre de filtres pour les pages staff. Les listes d'options sont construites
+automatiquement a partir des champs team / position des fiches _staff_members,
+donc rien a maintenir ici quand une nouvelle valeur apparait.
+{%- endcomment -%}
+{%- assign teams = "" -%}
+{%- assign positions = "" -%}
+{%- for m in site.staff_members -%}
+  {%- assign t = m.team | strip -%}
+  {%- if t != "" -%}{%- assign teams = teams | append: t | append: "||" -%}{%- endif -%}
+  {%- assign p = m.position | strip -%}
+  {%- if p != "" -%}{%- assign positions = positions | append: p | append: "||" -%}{%- endif -%}
+{%- endfor -%}
+{%- assign teams = teams | split: "||" | uniq | sort_natural -%}
+{%- assign positions = positions | split: "||" | uniq | sort_natural -%}
+<div class="staff-filters" id="staff-filters">
+<input type="search" id="staff-search" class="staff-filter-field" placeholder="Search a name…" aria-label="Search a name" autocomplete="off">
+<select id="staff-team" class="staff-filter-field" aria-label="Team">
+<option value="">All teams</option>
+{%- for t in teams %}<option value="{{ t | downcase }}">{{ t }}</option>{% endfor -%}
+</select>
+<select id="staff-position" class="staff-filter-field" aria-label="Position">
+<option value="">All positions</option>
+{%- for p in positions %}<option value="{{ p | downcase }}">{{ p }}</option>{% endfor -%}
+</select>
+<button type="button" id="staff-reset" class="staff-filter-reset">Reset</button>
+<span id="staff-count" class="staff-filter-count" aria-live="polite"></span>
+</div>
+<p id="staff-empty" class="staff-empty" hidden>No one matches these filters.</p>
+<script src="{{ '/assets/js/staff-filters.js' | relative_url }}" defer></script>

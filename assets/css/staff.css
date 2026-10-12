@@ -13,3 +13,73 @@
 .text-content {
     flex: 1;              /* Le texte occupe tout l'espace restant */
 }
+
+/* --- Fiches staff + barre de filtres (voir assets/js/staff-filters.js) --- */
+
+.staff-card {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.3cm;
+    margin-bottom: 0.3cm;
+}
+
+.staff-card[hidden] {
+    display: none !important;
+}
+
+.staff-filters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 0.6cm;
+}
+
+.staff-filter-field {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: inherit;
+    font-size: 0.95em;
+    max-width: 100%;
+}
+
+#staff-search {
+    flex: 1 1 14em;
+}
+
+.staff-filter-reset {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #eaeaea;
+    color: inherit;
+    font-size: 0.95em;
+    cursor: pointer;
+}
+
+.staff-filter-reset:hover {
+    background-color: #ddd;
+}
+
+.staff-filter-count {
+    margin-left: auto;
+    color: #777;
+    font-size: 0.9em;
+    white-space: nowrap;
+}
+
+.staff-empty {
+    color: #777;
+    font-style: italic;
+}
+
+@media (max-width: 575px) {
+    .staff-filter-field,
+    .staff-filter-reset {
+        flex: 1 1 100%;
+    }
+    .staff-filter-count {
+        margin-left: 0;
+    }
+}
