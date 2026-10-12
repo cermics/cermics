@@ -12,7 +12,7 @@ cover-img: /assets/images/coriolis6.jpg
  {% if link.id != "void" %}
  <a href="https://theses.fr/{{  link.id }}"><img src="{{ '/assets/images/these-fr.svg' | relative_url }}" width="30"></a>
  {% else %}
-  <a href="{{ link.url | relative_path }}">(pdf)</a>
+  <a href="{{ link.url | relative_url }}">(pdf)</a>
  {% endif %} **{{ link.AU }}**, *{{ link.TI }}*,  
  {{ link.N1 }} 
 
