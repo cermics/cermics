@@ -7,5 +7,5 @@ position: PhD Student
 function: member
 place: Coriolis B308
 mail:  Sofiane.EZZEHI@enpc.fr
-homepage: "http://s89ne.github.io/"
+homepage: "https://ezzehi.github.io/"
 ---
