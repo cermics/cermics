@@ -1,0 +1,14 @@
+# Surcouche de configuration utilisee uniquement par 'make check'.
+#
+# strict_filters transforme en erreur fatale l'emploi d'un filtre Liquid
+# inexistant. Sans cela Liquid renvoie simplement la valeur d'entree telle
+# quelle : le build reussit et la page est silencieusement fausse. C'est ainsi
+# qu'un '| relative_path' au lieu de '| relative_url' etait passe inapercu dans
+# phd.md, laissant tous les liens (pdf) des theses en 404 sur le site publie.
+#
+# error_mode: strict n'est volontairement PAS active : le theme
+# beautiful-jekyll utilise dans _includes/head.html des parentheses dans un
+# {% if %}, que Liquid refuse en mode strict.
+
+liquid:
+  strict_filters: true
