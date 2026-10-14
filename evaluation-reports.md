@@ -1,6 +1,6 @@
 ---
 layout: page
-cover-img: /assets/images/coriolis.jpg
+cover-img: /assets/images-cermics/image17.jpg
 ---
 
 #### Find here the evaluation reports from AERES/HCERES

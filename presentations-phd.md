@@ -1,6 +1,6 @@
 ---
 layout: page
-cover-img: /assets/images/coriolis.jpg
+cover-img: /assets/images-cermics/image16.jpg
 ---
 
 ### Phd and Postdocs Presentations on <a href="https://www.youtube.com/playlist?list=PLFIuidaxkf2xSjc6T5jh4g8PRnmPHQGTy">YouTube</a>
