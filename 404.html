@@ -4,6 +4,50 @@ title: 404 - Page not found
 permalink: /404.html
 ---
 
+{%- comment -%}
+GitHub Pages sert cette page pour toute URL inconnue du site. On s'en sert pour
+prolonger aux sous-chemins les redirections definies dans redirections/ :
+/~jpc/ est une vraie page de redirection generee par jekyll-redirect-from, mais
+/~jpc/books ne correspond a aucun fichier ici et atterrit donc sur ce 404.
+La table ci-dessous est construite automatiquement a partir de toutes les pages
+portant un redirect_to : il n'y a rien a maintenir en double.
+{%- endcomment -%}
+<script>
+(function () {
+  var REDIRECTS = [
+{%- for p in site.pages %}
+{%- if p.permalink and p.redirect_to %}
+{%- assign target = p.redirect_to.first | default: p.redirect_to %}
+    [{{ p.permalink | jsonify }}, {{ target | jsonify }}],
+{%- endif %}
+{%- endfor %}
+  ];
+  var BASEURL = {{ site.baseurl | default: "" | jsonify }};
+
+  // Le prefixe le plus long d'abord, pour que /~le/ ne capture pas /~lebris/.
+  REDIRECTS.sort(function (a, b) { return b[0].length - a[0].length; });
+
+  var path;
+  try {
+    path = decodeURIComponent(window.location.pathname);
+  } catch (e) {
+    path = window.location.pathname;
+  }
+  if (BASEURL && path.indexOf(BASEURL) === 0) {
+    path = path.slice(BASEURL.length);
+  }
+
+  for (var i = 0; i < REDIRECTS.length; i++) {
+    var from = REDIRECTS[i][0];
+    var rest = path.indexOf(from) === 0 ? path.slice(from.length) : null;
+    if (rest === null) { continue; }
+    var target = REDIRECTS[i][1].replace(/\/+$/, '') + '/' + rest;
+    window.location.replace(target + window.location.search + window.location.hash);
+    return;
+  }
+})();
+</script>
+
 <div class="text-center">
   <h1>Whoops, this page doesn't exist.</h1>
   <h1>Move along. (404 error)</h1>
