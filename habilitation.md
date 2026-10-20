@@ -1,6 +1,6 @@
 ---
 layout: page
-cover-img: /assets/images/coriolis6.jpg
+cover-img: /assets/images-cermics/image20.jpg
 ---
 
 ## Habilitation Theses
