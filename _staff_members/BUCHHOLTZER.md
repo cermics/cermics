@@ -5,4 +5,5 @@ name: Thomas
 team: OPTIM 
 position: PhD Student 
 function: member
+mail: thomas.buchholtzer@enpc.fr
 ---

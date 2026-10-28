@@ -5,4 +5,5 @@ name: Tanguy
 team: OPTIM 
 position: PhD Student
 function: member
+mail:  tanguy.lindegaard@enpc.fr
 ---
