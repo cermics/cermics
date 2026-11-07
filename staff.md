@@ -1,6 +1,6 @@
 ---
 layout: page
-cover-img: /assets/images/coriolis-collage.jpg
+cover-img: /assets/images/coriolis-collage-cermics.png
 ---
 
 {% include staff_filters.html %}
