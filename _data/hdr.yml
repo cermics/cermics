@@ -76,16 +76,11 @@
   pdf: /assets/hdr/turinici.pdf
   TI: "Contrôle et simulations numériques en chimie quantique"
   N1: Université Paris 6
-- id: 2007Imbert
-  AU: C. Imbert
-  YP: 2007
-  psd: imbert.pdf
-  TI: "Équations intégro-différentielles non-linéaires : questions d'existence, de régularité et d'homogénéisation"
-  N1: Université Paris-Dauphine
 - id: 2009Lelièvre
   AU: T. Lelièvre
   LN: http://tel.archives-ouvertes.fr/tel-00392808/fr/
   TI: "Analyse mathématique et numérique de modèles pour les matériaux, de l'échelle microscopique à l'échelle macroscopique"
+  YP: 2009
   N1: Université Paris-Dauphine
 - id: 2011Chancelir
   RE: void
