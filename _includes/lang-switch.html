@@ -1,0 +1,17 @@
+{%- comment -%}
+  Selecteur de langue. S'affiche dans la barre de navigation uniquement sur les
+  pages qui declarent une traduction dans leur front matter :
+
+    translation: /index-fr.html
+    translation-label: Français
+{%- endcomment -%}
+{%- if page.translation %}
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="{{ page.translation | relative_url }}"
+         hreflang="{{ page.translation-lang | default: 'fr' }}">
+        {{ page.translation-label | default: 'Français' }}
+      </a>
+    </li>
+  </ul>
+{%- endif -%}

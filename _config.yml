@@ -47,6 +47,14 @@ navbar-links:
 #  WIP: "dev"
 #  Images: "images"
 
+##########################################
+# --- Extra includes in the navbar --- #
+##########################################
+
+# Rendered at the right end of the navigation bar, on every page.
+navbar-extra:
+  - lang-switch.html
+
 ################
 # --- Logo --- #
 ################

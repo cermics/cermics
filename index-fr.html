@@ -1,0 +1,90 @@
+---
+layout: home
+language: fr
+translation: /
+translation-lang: en
+translation-label: English
+cover-img: /assets/images-cermics/image14.jpg
+carousels:
+  - images: 
+    - image: /assets/images-cermics/image1.jpg
+    - image: /assets/images-cermics/image6.jpg
+    - image: /assets/images-cermics/image2.jpg
+    - image: /assets/images-cermics/image4.jpg
+    - image: /assets/images-cermics/image7.jpg
+    - image: /assets/images-cermics/image8.jpg
+---
+
+<details markdown="1">
+<summary style="text-align: right;"><b>Actualités</b></summary>
+{% assign latest_news = site.news | where_exp: "item", "item.invisible != 'yes'" | reverse %}
+{% for item in latest_news limit: 5 %}
+<details markdown="1">
+<summary> {{ item.date | date : "%-d/%m/%Y" }}, <i>{{ item.title  }}</i></summary>
+  {{ item.content }}
+</details>
+{% endfor %}
+</details>
+
+<img src="{{ '/assets/images/logos_cermics.png' | relative_url }}"
+     align="left" hspace="20" vspace="20" /> 
+<p style="text-align: justify;">    
+Le CERMICS
+est le centre de recherche en mathématiques appliquées de l’<a
+href="http://www.enpc.fr" target="_blank">&Eacute;cole nationale des ponts et
+chaussées</a>. C’est une unité mixte de recherche avec le <a href="https://www.cnrs.fr"
+target="_blank">CNRS</a> (UMR 9032). Il héberge des équipes-projets communes avec <a
+href="https://www.inria.fr/fr/centre-inria-de-paris" target="_blank">Inria</a> <a
+href="https://www.inria.fr/fr/centre-inria-de-paris" target="_blank"> Paris</a> et l’<a
+href="https://www.univ-gustave-eiffel.fr/" target="_blank">Université Gustave
+Eiffel</a>, et fait partie de la <a
+href="https://bezout.univ-paris-est.fr/bezout-federation/">Fédération CNRS
+Bézout</a> ainsi que de l’école doctorale <a
+href="https://www.fondation-hadamard.fr/en/campus-paris-saclay/training/edmh/"
+target="_blank">EDMH</a>. L’acronyme CERMICS signifie « Centre d’Enseignement
+et de Recherche en MathématIques et Calcul Scientifique ». 
+</p>
+
+{% include carousel.html height="20" unit="%" duration="5" number="1" %}
+
+<p style="text-align: justify;">    
+Les chercheurs travaillent dans trois grands domaines : <a href={% link applied-probability.md %}>Probabilités
+    appliquées</a> ; <a href={% link mas.md %}>Modélisation, analyse et simulation</a> ;
+<a href={% link optimization.md %}>Optimisation</a>.
+L’originalité du centre réside dans sa capacité à construire des ponts entre
+approches déterministes et stochastiques et à produire à la fois des résultats
+théoriques et des méthodes numériques, avec de fortes interactions avec des
+partenaires industriels issus de domaines variés (transport, énergie, finance,
+ingénierie, industrie pharmaceutique) et avec des scientifiques académiques
+d’autres disciplines (biologie, chimie, physique et science des matériaux).
+</p>
+<br>
+
+Voici quelques vidéos donnant un aperçu des recherches menées au CERMICS. Voir la
+<a href="https://www.youtube.com/playlist?list=PLFIuidaxkf2wkSgZ_dtPNx8aIpMvyLjak"
+target="_blank">playlist complète</a>. 
+Voir également la <a href="https://www.youtube.com/playlist?list=PLFIuidaxkf2xSjc6T5jh4g8PRnmPHQGTy"
+target="_blank">playlist des étudiants</a> du CERMICS présentant leurs travaux, ainsi que
+les <a href="https://ingenius.ecoledesponts.fr/recherche/?s=CERMICS"
+target="_blank">contributions des membres du CERMICS à Ingenius</a>, le magazine
+numérique de l’&Eacute;cole des Ponts.
+
+
+<h4>Chercheurs permanents</h4>
+
+<br>
+{% include staff_gallery.html %}
+
+<h4>Vidéo de présentation du CERMICS</h4>
+<br>
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/L7EKxGnzf5k?si=HrF7pmtDO3J3CevC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</center>
+
+
+<h4>Vidéos des chercheurs permanents</h4>
+
+<br>
+{% include staff_youtube.html %}
+
+
