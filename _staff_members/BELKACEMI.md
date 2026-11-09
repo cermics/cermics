@@ -1,8 +1,8 @@
 ---
 sur: BELKACEMI
 image: missing.jpeg
-name: Chérif
+name: Cherif
 team: PROBA
-position: Postdoctoral fellow
+position: PhD Student 
 function: member
 ---
