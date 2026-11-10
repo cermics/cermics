@@ -7,5 +7,5 @@ position: Researcher
 function: member
 place: Coriolis B309
 mail:  laura.grazioli@enpc.fr
-homepage: "http://team.inria.fr/matherials/team-members/laura-grazioli/"
+homepage: "https://lauragrazioli.github.io/"
 ---
